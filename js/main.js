@@ -30,7 +30,7 @@ var svg = d3.select("#rotatingGlobe").append("svg")
     .attr("width", width)
     .attr("height", height);
 
-d3.json("../data/world.json", function(collection){
+d3.json("data/world.json", function(collection){
 	svg.selectAll("path")
 		.data(collection.features)
 		.enter().append("path")
