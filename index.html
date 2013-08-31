@@ -18,7 +18,7 @@
     
       body {
         padding: 0; 
-        background-color: #dbe9dd;      
+        background-color: black;      
       }
       .wrap{
         position: absolute;
@@ -31,27 +31,26 @@
         height: 30px;
         margin-right: 5px;
       }
-      .myCarousel{
-        
+
+      .row {
+        margin:0;
       }
+      .content-box{
+        z-index:2;
+        background-color: rgba(219, 233, 221, 0.8);
+      }
+      .hidden-box{
+        display: none;
+      }
+      
       .companyName{
-/*        position: absolute;
-        top:0;*/
-        border-radius: 5px;
-        background-color: #dbe9dd;
+        border-radius: 5px;        
         padding: 15px 20px 5px 20px;
         margin: 30px;
       }
       .block-element{
-        border-radius: 5px;
-        background-color: #dbe9dd;
-        margin: 15px;
-      }
-
-      #earth{
-/*        position: absolute;
-        right: 30px;
-        top: 30px;*/
+        border-radius: 5px;        
+        margin: 0 30px;
       }
 
     </style>   
@@ -62,94 +61,46 @@
 
   <!-- Carousel
     ================================================== -->
-    <div id="myCarousel" class="carousel slide" style="z-index:-2;">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        
-      </ol>
+<div id="myCarousel" class="carousel container slide">
+  <div class="carousel-inner">
+            <div class="active item one"></div>
+            <div class="item two"></div>
+            <div class="item three"></div>
+  </div>
+</div>
 
-      <div class="carousel-inner">
 
-        <div class="item active">          
-          <img src="img/forest-stream1920x1200.jpg" alt="First slide">
-          <div class="container">
-            
-          </div>
-        </div>
-        <div class="item">
-          <img src="img/winding-river1920x1200.jpg" alt="Second slide">
-          <div class="container">
-          
-          </div>
-        </div>
-        
-      </div>
-      <!-- Controls -->
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-    </div><!-- /.carousel -->    
+    </div>   
     <div class="wrap">
         <div class="row">
-        <div class="col-md-5 companyName" >
-          <h1>Gaia Spatial <small> Building Integrative Perspectives</small></h1><hr>
+        <div class="col-sm-6 companyName content-box" >
+          <h1 style="font-weight:bolder;">Gaia Spatial <br><small> Informing Integrative Perspectives</small></h1><hr>
+          <button type="button" class="btn btn-default" onclick="toggleHidden('#about')">About</button>
+          <button type="button" class="btn btn-default" onclick="toggleHidden('#servicesoffered')">Services Offered</button>
+          <button type="button" class="btn btn-default" onclick="toggleHidden('#loremipsum')">Lorem Ipsum</button> 
         </div>
         </div>
-      <div>
-        <div class="col-md-2 block-element">
-              <h2><img src="http://placehold.it/30x30" class="logoIcon" />Lorem ipsum </h2>
-              <p><a href="#">Lorem ipsum</a> dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+      <div class="row">
+            <div id="about" class="col-sm-6 block-element content-box hidden-box">
+              <p>Gaia Spatial, LLC is registered in the state of Maryland as a woman owned small business. At present, the company is owned, operated and staffed by Nadine Trahan, but in the process of pulling together a 2 to 4 person team of highly skilled and passionate members dedicated to supporting the Gaia Spatial mission.</p>
             </div>
-            <div class="col-md-2 block-element">
-              <h2><img src="http://placehold.it/30x30" class="logoIcon" />Lorem ipsum </h2>
-              <p><a href="#">Lorem ipsum</a> dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+            <div id="servicesoffered" class="col-sm-6 block-element content-box hidden-box">              
+              <p>Geospatial analysis is an iterative process involving conceptually informed techniques to examine static and dynamic forms, processes, patterns and relationships manifested across landscapes in space and time. Gaiaspatial services may include one, several or all phases of a project. While each is unique, a typical project may include project planning, digital data acquisition and geo-processing, geospatial and geo-statistical analysis, presentation of results, distribution of results and geospatial technology transfer.</p>
             </div>
-            <div class="col-md-2 block-element">
-              <h2><img src="http://placehold.it/30x30" class="logoIcon" />Lorem ipsum </h2>
-              <p><a href="#">Lorem ipsum</a> dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+            <div id="loremipsum" class="col-sm-6 block-element content-box hidden-box">
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
             </div>
-      </div>
-      
-      <div class="col-md-6" style="position:absolute; top:0; right:0; z-index:-1;">
-        <img src="img/earth.png" class="pull-right img-responsive" id="earth" alt="">
-      </div>
-    
+      </div>      
 
-        <!-- <div class="col-md-2">
-          <div class="well sidebar-nav">
-            <ul class="nav nav-list">
-              <li><a href="#">Lorem ipsum</a></li>
-              <li><a href="#">Lorem ipsum</a></li>
-              <li><a href="#">Lorem ipsum</a></li>
-              <li><a href="#">Lorem ipsum</a></li>
-              <li><a href="#">Lorem ipsum</a></li>
-            </ul>
-          </div>
-        </div> -->
-                
-<!--             <div class="row">
-            <div class="col-md-4">
-              <h2><img src="http://placehold.it/30x30" class="logoIcon" />Lorem ipsum </h2>
-              <p><a href="#">Lorem ipsum</a> dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
-            </div>
-            <div class="col-md-4">
-              <h2><img src="http://placehold.it/30x30" class="logoIcon" />Lorem ipsum </h2>
-              <p><a href="#">Lorem ipsum</a> dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
-            </div>
-            <div class="col-md-4">
-              <h2><img src="http://placehold.it/30x30" class="logoIcon" />Lorem ipsum </h2>
-              <p><a href="#">Lorem ipsum</a> dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
-            </div>
-             </div> -->
+      <div id="rotatingGlobe" style="position:absolute; top:0; right:0; z-index:1;"></div>
 
-    
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery-1.9.1.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-
+    <script src="js/d3.v3.min.js"></script>
+    <script src="js/topojson.v1.min.js"></script>
     <script src="js/main.js"></script>
 
 

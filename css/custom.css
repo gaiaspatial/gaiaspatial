@@ -1,0 +1,42 @@
+.carousel { z-index: -99; } /* keeps this behind all content */
+.carousel .item {
+    position: fixed; 
+    width: 100%; height: 100%;
+    -webkit-transition: .7s ease-in-out opacity; 
+    -moz-transition: .7s ease-in-out opacity; 
+    -ms-transition: .7s ease-in-out opacity; 
+    -o-transition: .7s ease-in-out opacity; 
+    transition: .7s ease-in-out opacity; 
+    left: 0 !important; 
+ 
+}
+.carousel .one {
+    background: url(../img/P1010191.jpg);
+    background-size: cover;
+    -moz-background-size: cover;
+}
+.carousel .two {
+    background: url(../img/P1010293.jpg);
+    background-size: cover;
+    -moz-background-size: cover;
+}
+.carousel .three {
+    background: url(../img/P1010035.jpg);
+    background-size: cover;
+    -moz-background-size: cover;
+}
+
+.carousel .active.left, 
+.carousel .active.right { 
+    opacity: 0; 
+    z-index: 2; 
+}
+
+
+.Country{
+    fill: rgba(0,30,0,0.6);
+}
+
+.Ocean{
+    fill: rgba(30,30,100,0.6);
+}
