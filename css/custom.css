@@ -2,11 +2,11 @@
 .carousel .item {
     position: fixed; 
     width: 100%; height: 100%;
-    -webkit-transition: .7s ease-in-out opacity; 
-    -moz-transition: .7s ease-in-out opacity; 
-    -ms-transition: .7s ease-in-out opacity; 
-    -o-transition: .7s ease-in-out opacity; 
-    transition: .7s ease-in-out opacity; 
+    -webkit-transition: .7s ease opacity; 
+    -moz-transition: .7s ease opacity; 
+    -ms-transition: .7s ease opacity; 
+    -o-transition: .7s ease opacity; 
+    transition: .7s ease opacity; 
     left: 0 !important; 
  
 }

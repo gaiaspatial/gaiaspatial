@@ -6,7 +6,7 @@ function toggleHidden(target){
 
 $(document).ready(function() {
 	$('#myCarousel').carousel({
-		interval: 6000,
+		interval: 8000,
 		pause: "false"
 	});
 });
