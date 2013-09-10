@@ -26,6 +26,7 @@
         right:0;
         width:100%;
       }
+
       img.logoIcon{
         width: 30px;
         height: 30px;
@@ -54,37 +55,65 @@
         margin: 0 30px;
       }
 
-      #nav-box {
-        width:240px;
+      
+      ul#navigation {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        position: relative;
       }
-      .menu-item{
-        position:relative;
-        opacity:0.8;
+      ul#navigation li {
+        margin: 0;
+        padding: 0;
       }
-      .menu-item.selected {
-        opacity: 1;
-        left: 40px;
+      ul#navigation li a {
+        display: block;
+        text-decoration: none;
+        text-indent: -9999px;
+        position: absolute;
+        top:  0;
       }
 
-      #menu1{
-        z-index: 20;        
+      ul#navigation li a.one {
+        background: url('img/menusquare_grey.png') no-repeat;
+        left: 0;
+        height: 100px;
+        width: 140px;
+        z-index: 20;
       }
-      #menu2{
+      ul#navigation li a.two {
+        background: url('img/menusquare_grey.png') no-repeat;
+        top: 70px;
+        left:0;
+        height: 100px;
+        width: 140px;
         z-index: 19;        
-        top: -60px;        
       }
-      #menu3{
+      ul#navigation li a.three {
+        background: url('img/menusquare_grey.png') no-repeat;
+        top: 140px;
+        left: 0;
+        height: 100px;
+        width: 140px;
         z-index: 18;        
-        top: -120px;
       }
-      #menu4{
-        z-index: 17;        
-        top: -180px;
+      ul#navigation li a.four {
+        background: url('img/menusquare_grey.png') no-repeat;
+        top: 210px;
+        left: 0;
+        height: 100px;
+        width: 140px;
+        z-index: 17;
       }
-      #menu5{
-        z-index: 16;        
-        top: -240px;
+      
+      ul#navigation li a:hover {
+        background: url('img/menusquare.png') no-repeat;
+        padding: 0 20px 0 0;
+        left: 30px;
+        z-index: 21;
       }
+    
+
      
     </style>   
 
@@ -103,29 +132,37 @@
 </div>
 
 
-    </div>  
+     
 
-    <div class="wrap">
+    <div class="container" style="padding-top:20px;">
+
+<ul id="navigation">
+    <li><a href="#" class="one">1</a></li>
+    <li><a href="#2" class="two">2</a></li>
+    <li><a href="#3" class="three">3</a></li>
+    <li><a href="#4" class="four">4</a></li>
+</ul>      
       
-    </div>
 
-        <div class="row">
+
+        <!-- <div class="row">
         <div class="col-sm-6 companyName content-box" >
-          <!-- <h1 style="font-weight:bolder;">Gaia Spatial <br><small> Informing Integrative Perspectives</small></h1><hr> -->
-          <p><img src="img/gaialogo.png" style="max-width:100%; max-height:140px;"></p>
-        <!--   <button type="button" class="btn btn-default" onclick="toggleHidden('#about')">About</button>
-          <button type="button" class="btn btn-default" onclick="toggleHidden('#servicesoffered')">Services Offered</button>
-          <button type="button" class="btn btn-default" onclick="toggleHidden('#loremipsum')">Lorem Ipsum</button>  -->
+          <p><img src="img/gaialogo.png" style="max-width:100%; max-height:70px;"></p>
         </div>
+      </div>
 
-<div id="nav-box" style="position:relative;">
-  <span id="menu1" class="menu-item"><img src="img/menusquare.png"></span>
-  <span id="menu2" class="menu-item selected"><img src="img/menusquare.png"></span>
-  <span id="menu3" class="menu-item"><img src="img/menusquare.png"></span>
-  <span id="menu4" class="menu-item"><img src="img/menusquare.png"></span>
-  <span id="menu5" class="menu-item"><img src="img/menusquare.png"></span>
-</div>
+
       <div class="row">
+            <div class="col-sm-2">
+              <ul class="list-group">
+                <li class="list-group-item" onclick="check();">Cras justo odio</li>
+                <li class="list-group-item">Dapibus ac facilisis in</li>
+                <li class="list-group-item">Morbi leo risus</li>
+                <li class="list-group-item">Porta ac consectetur ac</li>
+                <li class="list-group-item">Vestibulum at eros</li>
+              </ul>             
+            </div> -->
+
             <div id="about" class="col-sm-6 block-element content-box hidden-box">
               <p>Gaia Spatial, LLC is registered in the state of Maryland as a woman owned small business. At present, the company is owned, operated and staffed by Nadine Trahan, but in the process of pulling together a 2 to 4 person team of highly skilled and passionate members dedicated to supporting the Gaia Spatial mission.</p>
             </div>
@@ -139,7 +176,7 @@
 
       <div id="rotatingGlobe" style="position:absolute; top:0; right:0; z-index:1;"></div>
 
-
+      
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery-1.9.1.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->

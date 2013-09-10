@@ -47,3 +47,6 @@ lat = lat +.5
 },window.anispeed);
 
 
+function check(){
+    console.log("yes");
+}
