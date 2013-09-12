@@ -1,5 +1,5 @@
-function toggleHidden(target){
-    $('.hidden-box').hide();
+function toggleContentOption(target){
+    $('.content-option').hide();
     $(target).show();
 }
 
@@ -12,12 +12,12 @@ $(document).ready(function() {
 });
 
 
-var width = 500,
-    height = 500;
+var width = 480,
+    height = 480;
 
 var lat = -180
 var projection = d3.geo.orthographic()
-    .scale(200)
+    .scale(180)
     .translate([width/2,height/2])
     .rotate([lat,0])
     .clipAngle(90);
@@ -26,7 +26,7 @@ var path = d3.geo.path()
 
 var graticule = d3.geo.graticule();
 
-var svg = d3.select("#rotatingGlobe").append("svg")
+var svg = d3.select(".rotatingGlobe").append("svg")
     .attr("width", width)
     .attr("height", height);
 
@@ -45,8 +45,3 @@ lat = lat +.5
   svg.selectAll("path")
       .attr("d", path);
 },window.anispeed);
-
-
-function check(){
-    console.log("yes");
-}
