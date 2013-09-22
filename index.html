@@ -17,53 +17,39 @@
       html {
         height: 100%;
       }
-
       body {
         padding: 0; 
         background-color: black;
         height:100%;              
       }
-
       .wrap {
         background-color: rgba(15, 15, 15, 0.15);
         height:100%;
         width:100%;
       }
-
       .row {
         margin:0;
       }
-
-      .content-box{
-        z-index:2;
+      .content-box{        
         color: black;
-        background-color: rgba(255, 255, 255, 0.3);
-        margin-left: 180px;
-        margin-right: 15px;
-        position: absolute;
-        max-width: 560px;
-        min-height: 380px;
+        background-color: rgba(255, 255, 255, 0.3);                   
         padding: 20px;
         border-radius: 5px;
       }
-
       p {
         font-weight:800;
         font-size:larger;
       }
-
-      .logo {
-        max-height: 100px; 
-        max-width: 100%;
-        z-index: 2;
+      .logo{
+        padding: 20px 20px ;      
       }
-
-      .logo-background{        
-        border-radius: 5px;        
-        padding: 20px;
-        margin: 30px 0;
+      .globe{
+        padding-top: 10px;
       }
-      
+      .rotatingGlobe {
+        margin-left: auto;
+        margin-right: auto;
+      }      
       ul#navigation {
         list-style-type: none;
         margin: 0;
@@ -81,7 +67,6 @@
         position: absolute;
         top:  0;
       }
-
       ul#navigation li a.one {
         background: url('img/menusquare_grey.png') no-repeat;
         left: 0;
@@ -121,18 +106,10 @@
         width: 140px;
         z-index: 16;
       }
-
       ul#navigation li a:hover {
         background: url('img/menusquare.png') no-repeat;
         padding: 0 20px 0 0;
         left: 30px;        
-      }
-
-      .rotatingGlobe {
-        z-index: 0;
-        position: absolute;
-        top:148px;
-        left:60%;
       }
 
     </style>   
@@ -152,16 +129,41 @@
 
     <div class="wrap">   
     <div class="container">
-
-      <div class="rotatingGlobe"></div>
-
-      <div class="row">
-        <div class="logo-background">
-          <img class="logo" src="img/gaialogo.png">
+      <div class="row">  
+        <div class="col-xs-8">
+          <div class="logo">
+            <img class="img-responsive" src="img/gaialogo.png">
+          </div>
         </div>
-      </div>
-
+        <div class="col-xs-4">
+          <div class="globe">
+            <div class="rotatingGlobe"></div>
+          </div>
+        </div>
+      </div> <!-- /row -->
       <div class="row">
+        <div class="col-xs-8">
+          <div class="content-box">
+            <div class="overview content-option">
+              <h2><u>Overview</u>: </h2><p>Gaia Spatial, LLC is a GIS and Remote Sensing consultancy specializing in integrative geospatial analysis to inform environmental conservation and sustainability research and management. Geospatial analysis fosters integrative perspectives of biological, physical, and social system interrelationships by framing ecological and biophysical theories within site specific, multi-scalar landscape context.</p>
+            </div>
+            <div class="approach content-option" style="display:none;">
+              <h2><u>Approach</u>: </h2><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.</p>
+            </div>
+            <div class="services content-option" style="display:none;">
+              <h2><u>Services</u>: </h2><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.</p>
+            </div>
+            <div class="projects content-option" style="display:none;">
+              <h2><u>Projects</u>: </h2><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.</p>
+            </div>
+            <div class="team content-option" style="display:none;">
+              <h2><u>Team</u>: </h2><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.</p>  
+            </div>
+          </div> <!-- .content-box -->
+        </div>      
+
+      <div class="col-xs-4">
+        
         <div class="">
           <ul id="navigation">
             <li><a onclick="toggleContentOption('.overview')" class="one"></a></li>
@@ -171,35 +173,17 @@
             <li><a onclick="toggleContentOption('.team')" class="five"></a></li>    
           </ul>
         </div>
-        <div class="content-box">
-          <div class="overview content-option">
-            <h2><u>Overview</u>: </h2><p>Gaia Spatial, LLC is a GIS and Remote Sensing consultancy specializing in integrative geospatial analysis to inform environmental conservation and sustainability research and management. Geospatial analysis fosters integrative perspectives of biological, physical, and social system interrelationships by framing ecological and biophysical theories within site specific, multi-scalar landscape context.</p>
-          </div>
-          <div class="approach content-option" style="display:none;">
-            <h2><u>Approach</u>: </h2><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.</p>
-          </div>
-          <div class="services content-option" style="display:none;">
-            <h2><u>Services</u>: </h2><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.</p>
-          </div>
-          <div class="projects content-option" style="display:none;">
-            <h2><u>Projects</u>: </h2><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.</p>
-          </div>
-          <div class="team content-option" style="display:none;">
-            <h2><u>Team</u>: </h2><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.</p>  
-          </div>
-        </div> <!-- .content-box -->
       </div>
+    </div> <!-- /row -->
 
     </div> <!-- /.container -->
-    </div> <!-- /.wrap -->        
-
-      
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="js/jquery-1.9.1.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    </div> <!-- /.wrap -->   
+    
+    <script src="js/jquery-1.9.1.min.js"></script>    
     <script src="js/bootstrap.min.js"></script>
     <script src="js/d3.v3.min.js"></script>
     <script src="js/topojson.v1.min.js"></script>
+    <script src="js/fit-projection.js"></script>
     <script src="js/main.js"></script>
 
   </body>
