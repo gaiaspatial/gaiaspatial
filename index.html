@@ -6,6 +6,8 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="css/custom.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="../../assets/js/html5shiv.js"></script>
@@ -13,168 +15,153 @@
     <![endif]-->
 
     <style type="text/css">
-    
-      html {
-        height: 100%;
-      }
-      body {
-        padding: 0; 
-        background-color: black;
-        height:100%;              
-      }
-      .wrap {
-        background-color: rgba(15, 15, 15, 0.15);
-        height:100%;
-        width:100%;
-      }
-      .row {
-        margin:0;
-      }
-      .content-box{        
-        color: black;
-        background-color: rgba(255, 255, 255, 0.3);                   
-        padding: 20px;
-        border-radius: 5px;
-      }
-      p {
-        font-weight:800;
-        font-size:larger;
-      }
-      .logo{
-        padding: 20px 20px ;      
-      }
-      .globe{
-        margin-top: 10px;
-        margin-left: 10px;
-      }           
-      ul#navigation {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        position: relative;
-      }
-      ul#navigation li {
-        margin: 0;
-        padding: 0;
-      }
-      ul#navigation li a {
-        display: block;
-        text-decoration: none;
-        text-indent: -9999px;
-        position: absolute;
-        top:  0;
-      }
-      ul#navigation li a.one {
-        background: url('img/menusquare_grey.png') no-repeat;
-        left: 0;
-        height: 100px;
-        width: 140px;
-        z-index: 20;
-      }
-      ul#navigation li a.two {
-        background: url('img/menusquare_grey.png') no-repeat;
-        top: 70px;
-        left:0;
-        height: 100px;
-        width: 140px;
-        z-index: 19;        
-      }
-      ul#navigation li a.three {
-        background: url('img/menusquare_grey.png') no-repeat;
-        top: 140px;
-        left: 0;
-        height: 100px;
-        width: 140px;
-        z-index: 18;        
-      }
-      ul#navigation li a.four {
-        background: url('img/menusquare_grey.png') no-repeat;
-        top: 210px;
-        left: 0;
-        height: 100px;
-        width: 140px;
-        z-index: 17;
-      }
-      ul#navigation li a.five {
-        background: url('img/menusquare_grey.png') no-repeat;
-        top: 280px;
-        left: 0;
-        height: 100px;
-        width: 140px;
-        z-index: 16;
-      }
-      ul#navigation li a:hover {
-        background: url('img/menusquare.png') no-repeat;
-        padding: 0 20px 0 0;
-        left: 30px;        
-      }
+
+    body {
+      padding: 30px;
+      background-image:url('img/noisy-texture-100x100-o6-d12-c-111b2e-t0.png');
+      color: #f5f5f5;
+    } 
+    /*http://www.noisetexturegenerator.com/*/  
+
+    .blockSummary {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .blockTitle {
+      text-align: center;
+      font-variant: small-caps;
+      margin-bottom: -25px;
+    }
+    .blockContent {
+      background-color: rgba(0,0,0,0.3);      
+      border-radius: 6px;
+      padding: 35px 20px;     
+    }
+    .label-gaia {
+      background-color: #0a101b; 
+      white-space: normal;
+      display: inline-block;
+      max-width: 85%;
+    }
+    .btn-layers {
+      width: 100%;
+      white-space: normal;
+    }
+    #layerButtons .btn{
+      margin-bottom: 4px;
+    }
+    .btn.active {
+      font-weight: bold;
+    }
+      
 
     </style>   
 
   </head>
 
   <body>
+
   
-    <div id="myCarousel" class="carousel container slide">
-      <div class="carousel-inner">
-        <div class="active item one"></div>
-        <div class="item two"></div>
-        <div class="item three"></div>
+
+    <div class="container">
+      <div class="jumbotron">
+        <div class="container">
+          <div class="col-sm-9">
+          <img src="img/gaialogo.png" class="img-responsive" alt="" title="">
+          </div>
+          <div class="col-sm-3">
+          <img src="http://placehold.it/200x200" class="img-responsive" alt="" title="">
+          </div>          
+        </div>
+      </div> 
+      
+      <div class="row">
+        <div class="col-md-12 blockSummary">
+          <hr>
+          <h3>Gaia Spatial, LLC is an environmental geospatial consultancy, specializing in multi-scalar integrative analysis to explore, interpret, describe, explain, predict, conserve and restore sustainable landscape based form-process associations and patterns with respect to the life they sustain.</h3>
+          <hr>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="blockTitle">
+            <h2><span class="label label-primary label-gaia">From Questions to Insight</span></h2>
+          </div>
+          <div class="blockContent">
+            
+            <p>Gaia Spatial offers unique capabilities in translating environmental <em><b>questions</b></em> to geospatial analysis, maximizing successful selection and implementation of optimal concepts, tools and <em><b>data.</em></b><p>
+            <p>Our approach to geospatial analysis is an iterative process of translation between real world phenomena and simplified representations in order to transform <b>data to <em>information.</em></b> 
+            <p>With our interdisciplinary background and cross-disciplinary liaising skills, we bring integrative perspectives to our partnerships in transforming <b>information to <em>insight.</em></b></p> 
+            <hr>
+            <p>Ecosystems comprise complex biotic and abiotic nonlinear dynamics, which are most coherently appraised within multi-scalar, multi-dimensional, network and site specific, socio-biophysical context.</p>
+            <p>Framing socio-ecological questions into landscape context advances multi-scalar integrative perspectives.</p>
+            <p>Whether the questions involve dynamics in socio-environmental planning, plant or wildlife distributions, forest health, water quality/quantity or all encompassing climate change, connections between life forms and the resources and habitat they utilize are manifested across landscapes in space and time.</p>  
+          </div>       
+        </div>
+        <div class="col-md-6">
+          <div class="blockTitle">
+              <h2><span class="label label-primary label-gaia">On Multi-Scalar Integrative Analysis</span></h2>
+          </div>
+          <div class="blockContent">            
+            <p>In advancing multi-scalar perspectives, we use sound conceptual models that integrate our understandings of biophysical form-process associations operating within and between key landscape scales. Navigate through the geospatial layers below to learn about significant functional scales.</p>
+            <div class="row">
+              <div class="col-sm-8">
+                <img id="layerImage" src="img/layer-ecoregions.png" class="img-responsive" alt="" title="">
+              </div>
+              <div class="col-sm-4">
+                <div id="layerButtons">
+                  <button type="button" class="btn btn-primary btn-layers ecoregions active" onclick="changeLandscapeLayer('ecoregions')">Ecoregions</btn>            
+                  <button type="button" class="btn btn-primary btn-layers watersheds" onclick="changeLandscapeLayer('watersheds')">Watersheds</btn>            
+                  <button type="button" class="btn btn-primary btn-layers landscapes" onclick="changeLandscapeLayer('landscapes')">Landscape Units</btn>            
+                  <button type="button" class="btn btn-primary btn-layers stands" onclick="changeLandscapeLayer('stands')">Stands & Reaches</btn>            
+                  <button type="button" class="btn btn-primary btn-layers habitats" onclick="changeLandscapeLayer('habitats')">Habitat Units</btn>
+                </div> <!-- layerButtons -->
+              </div> <!-- col-sm-4 -->
+            </div> <!-- row -->
+            <div id="layerTexts">
+              <div class="ecoregions">
+                <h2>Ecoregional Landscapes</h2>
+                <p>At the process scale connecting continental to ecoregional phenomena, ecoregional data reflect results of geospatial analyses aimed at classifying Armed with these insights, we can...</p>
+                <p>Different types of landscapes (e.g. forest, river, desert, coastal, wetlands, etc.) display distinct sets of characteristic forms associated with key biophysical processes governing holistic landscape functioning.</p>
+                <p>Forest landscapes</p>
+                <p>Freshwater landscapes</p>
+                <p>Coastal landscapes</p>
+              </div>
+              <div class="watersheds" style="display:none">
+                <h2>Watersheds</h2>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+                <p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+              </div>
+              <div class="landscapes" style="display:none">
+                <h2>Landscape Units</h2>
+                <p>Odio cum fusce turpis. Aliquam aptent cursus duis litora Dis hac id at fames cursus risus ipsum torquent cursus maecenas parturient.</p>
+                <p>Vulputate primis platea. Dignissim ridiculus nunc vestibulum non ultrices curae; tincidunt dictum cubilia. Magna proin praesent consequat, volutpat fames. Id scelerisque leo sagittis ad torquent auctor facilisis. Sem taciti phasellus phasellus congue montes.</p>
+                <p>Auctor velit ante lorem litora, conubia aenean. Est ridiculus elementum, ipsum semper, habitasse at mollis, inceptos dolor commodo facilisis dis consequat justo. Potenti ligula at. Sociis.</p>
+              </div>
+              <div class="stands" style="display:none">
+                <h2>Stands and Reaches</h2>
+                <p>Justo nulla augue scelerisque. Nisl sit lectus placerat ac ad fames pellentesque erat a. Molestie varius ante diam aliquet. Scelerisque pharetra dui vehicula convallis sociis ornare lacus pretium sagittis. Porta. Rhoncus iaculis.</p>
+                <p>Pede viverra bibendum aptent viverra ultrices. Auctor maecenas dignissim adipiscing scelerisque vitae massa cum ligula neque. Lacus penatibus maecenas bibendum tincidunt.</p>
+                <p>Aenean. Lobortis vivamus arcu in libero lacinia praesent. Vivamus. Etiam pretium eu auctor potenti natoque in odio proin magnis netus pharetra habitant ac suspendisse, fringilla quis class.</p>
+              </div>
+              <div class="habitats" style="display:none">
+                <h2>Habitat Units</h2>
+                <p>Tempus justo taciti. Phasellus varius. Nisl, tortor platea convallis. Ultricies fames netus dictumst pulvinar nam mauris est vehicula.</p>
+                <p>Vitae felis parturient morbi suspendisse ac pede dignissim tempus. Cras duis fringilla natoque adipiscing sociosqu. Aliquam consectetuer enim at erat. Eleifend lacinia quisque sed morbi egestas varius enim, diam et nunc. Lacus eleifend neque sit platea.</p>
+                <p>Erat tempus nec fermentum porttitor urna sit enim tortor quis habitant magna quisque nonummy placerat. Ligula. Placerat. Commodo integer mauris Torquent sodales Luctus tellus velit. Luctus.</p>
+              </div>
+            </div> <!-- row -->
+          </div>
+          
+          
+        </div>        
       </div>
     </div>
-
-
-    <div class="wrap">   
-    <div class="container">
-      <div class="row">  
-        <div class="col-xs-8">
-          <div class="logo">
-            <img class="img-responsive" src="img/gaialogo.png">
-          </div>
-        </div>
-        <div class="col-xs-4">
-          <div class="globe">
-            <div class="rotatingGlobe"></div>
-          </div>
-        </div>
-      </div> <!-- /row -->
-      <div class="row">
-        <div class="col-xs-8">
-          <div class="content-box">
-            <div class="overview content-option">
-              <h2><u>Overview</u>: </h2><p>Gaia Spatial, LLC is a GIS and Remote Sensing consultancy specializing in integrative geospatial analysis to inform environmental conservation and sustainability research and management. Geospatial analysis fosters integrative perspectives of biological, physical, and social system interrelationships by framing ecological and biophysical theories within site specific, multi-scalar landscape context.</p>
-            </div>
-            <div class="approach content-option" style="display:none;">
-              <h2><u>Approach</u>: </h2><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.</p>
-            </div>
-            <div class="services content-option" style="display:none;">
-              <h2><u>Services</u>: </h2><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.</p>
-            </div>
-            <div class="projects content-option" style="display:none;">
-              <h2><u>Projects</u>: </h2><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.</p>
-            </div>
-            <div class="team content-option" style="display:none;">
-              <h2><u>Team</u>: </h2><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.</p>  
-            </div>
-          </div> <!-- .content-box -->
-        </div>      
-
-      <div class="col-xs-4">
-        
-        <div class="">
-          <ul id="navigation">
-            <li><a onclick="toggleContentOption('.overview')" class="one"></a></li>
-            <li><a onclick="toggleContentOption('.approach')" class="two"></a></li>
-            <li><a onclick="toggleContentOption('.services')" class="three"></a></li>
-            <li><a onclick="toggleContentOption('.projects')" class="four"></a></li>
-            <li><a onclick="toggleContentOption('.team')" class="five"></a></li>    
-          </ul>
-        </div>
-      </div>
-    </div> <!-- /row -->
-
-    </div> <!-- /.container -->
-    </div> <!-- /.wrap -->   
+  
+    
     
     <script src="js/jquery-1.9.1.min.js"></script>    
     <script src="js/bootstrap.min.js"></script>
