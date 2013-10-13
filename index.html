@@ -2,8 +2,11 @@
 <html>
   <head>
     <title>Gaia Spatial</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    
+    <meta name="description" content="">
+    <meta name="author" content="">
+
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="css/custom.css" rel="stylesheet">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
@@ -89,20 +92,11 @@
     }
     #layerImage {
       margin-bottom: 6px;
+      background-color: #f5f5f5;
     }
     .btn.active {
       font-weight: bold;
-    }
-    /*.arrow-down {
-      width: 0; 
-      height: 0; 
-      border-left: 50px solid transparent;
-      border-right: 50px solid transparent;      
-      border-top: 35px solid #060f1f;
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: 2px;
-    }*/
+    } 
     .arrow-block {
       text-align: center;      
       background-color: #060f1f;
@@ -116,37 +110,70 @@
       /*background-color: rgba(0,0,0,0.3);*/      
       padding: 20px 35px;  
       color: #999;
+      text-align: center;
     }   
     .social-list {
       padding: 0;
+      margin-left: -6px;
     }
-    .social-list a:link, .social-list a:visited {
+    .footer a:link, .social-list a:visited {
       color: #5a5a5a;
       cursor: pointer;
+      text-decoration: none;
     }
     .social-list li {
       display: inline-block;      
     }
-    .social-list li.twitter {
-      margin-left: 15px;
-      margin-bottom: -2px;
+    .social-list span {
+      float: left;
+    }    
+    .social-list li {
+      display: inline-block;
+      margin-left: 5px;
+    }
+    .social-list li.linkedin {
+      margin-left: 0;
     }
     .social-list span {
       float: left;
     }
+    .social-list li.linkedin span {
+      background: url("../img/linkedin_grey.png");
+      background-repeat: no-repeat;
+      height: 25px;
+      width: 25px;
+    }
+    .social-list li.linkedin a:hover span {
+      background: url("../img/linkedin_color.png");
+      background-repeat: no-repeat;
+      height: 25px;
+      width: 25px;
+    }
     .social-list li.twitter span {
-      background: url("img/twitter_grey.png");
+      background: url("../img/twitter_grey.png");
       background-repeat: no-repeat;
       height: 25px;
       width: 25px;
     }
     .social-list li.twitter a:hover span {
-      background: url("img/twitter_color.png");
+      background: url("../img/twitter_color.png");
       background-repeat: no-repeat;
       height: 25px;
       width: 25px;
     }
-
+    .social-list li.facebook span {
+      background: url("../img/facebook_grey.png");
+      background-repeat: no-repeat;
+      height: 25px;
+      width: 25px;
+      cursor: pointer;
+    }
+    .social-list li.facebook a:hover span {
+      background: url("../img/facebook_color.png");
+      background-repeat: no-repeat;
+      height: 25px;
+      width: 25px;
+    }
 
     </style> 
   </head>
@@ -207,26 +234,24 @@
             <p>By framing questions within site specific landscape context, we are able to integrate discipline bound knowledge in relation to landscape characteristics and dynamics to provide site specific, multi-scalar, biophysical frameworks. Navigate through the layers below to learn about key functional aquatic landscape scales.</p>
             <div class="row">
               <div class="col-sm-8">
-                <img id="layerImage" src="img/layer-ecoregions.png" class="img-responsive" alt="" title="">
+                <img id="layerImage" src="img/layer-ecoregion.png" class="img-responsive" alt="" title="">
               </div>
               <div class="col-sm-4">
                 <div id="layerButtons">
-                  <button type="button" class="btn btn-primary btn-layers ecoregions active" onclick="changeLandscapeLayer('ecoregions')">Ecoregion</btn>            
-                  <button type="button" class="btn btn-primary btn-layers watersheds" onclick="changeLandscapeLayer('watersheds')">Watershed</btn>            
-                  <button type="button" class="btn btn-primary btn-layers landscapes" onclick="changeLandscapeLayer('landscapes')">Landscape Unit</btn>            
-                  <button type="button" class="btn btn-primary btn-layers stands" onclick="changeLandscapeLayer('stands')">Reach</btn>            
-                  <button type="button" class="btn btn-primary btn-layers habitats" onclick="changeLandscapeLayer('habitats')">Habitat Unit</btn>
+                  <img id="ecoregion" class="img-responsive active" src="img/thumb-ecoregion-active.png" onclick="changeLandscapeLayer('ecoregion')">                            
+                  <button id="watersheds" type="button" class="btn btn-primary btn-layers watersheds" onclick="changeLandscapeLayer('watersheds')">Watershed</btn>            
+                  <button id="landscapes" type="button" class="btn btn-primary btn-layers landscapes" onclick="changeLandscapeLayer('landscapes')">Landscape Unit</btn>            
+                  <button id="stands" type="button" class="btn btn-primary btn-layers stands" onclick="changeLandscapeLayer('stands')">Reach</btn>            
+                  <button id="habitats" type="button" class="btn btn-primary btn-layers habitats" onclick="changeLandscapeLayer('habitats')">Habitat Unit</btn>
                 </div> <!-- layerButtons -->
               </div> <!-- col-sm-4 -->
             </div> <!-- row -->
             <div id="layerTexts">
-              <div class="ecoregions">
-                <h2>Ecoregional Landscapes</h2>
-                <p>At the process scale connecting continental to ecoregional phenomena, ecoregional data reflect results of geospatial analyses aimed at classifying Armed with these insights, we can...</p>
-                <p>Different types of landscapes (e.g. forest, river, desert, coastal, wetlands, etc.) display distinct sets of characteristic forms associated with key biophysical processes governing holistic landscape functioning.</p>
-                <p>Forest landscapes</p>
-                <p>Freshwater landscapes</p>
-                <p>Coastal landscapes</p>
+              <div class="ecoregion">
+                <h2>Ecoregion</h2>
+                <p>Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.</p>
+                <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+                <p>Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. </p>
               </div>
               <div class="watersheds" style="display:none">
                 <h2>Watersheds</h2>
@@ -253,19 +278,29 @@
                 <p>Erat tempus nec fermentum porttitor urna sit enim tortor quis habitant magna quisque nonummy placerat. Ligula. Placerat. Commodo integer mauris Torquent sodales Luctus tellus velit. Luctus.</p>
               </div>
             </div> <!-- layerTexts -->
+            <hr>
+            <br>
+            <div class="text-center"><p>"What we see depends mainly on what we look for." <br> - John Lubbock</p></div>
+
+
+
           </div> <!-- blockContent -->
           
           
         </div> <!-- col-md-6    -->     
       </div> <!-- row -->
       <hr style="margin:70px 0 0 0;">
-      <div class="row footer">        
-        <ul class="social-list">
-          <li><span class="text-muted"><a href="mailto:info@gaiaspatial.com" target="_blank"><b>info@gaiaspatial.com</b></a></span></li>  
-          <li class="twitter"><a href="http://twitter.com/GaiaSpatial" target="_blank"><span></span></a></li> 
-           <li class="pull-right">&copy; Nadine Trahan 2013</li>      
-      </ul>   
-        
+      <div class="row footer">
+        <h5><b>Contact Us:</b></h5>
+        <p>337-255-6952</p>
+        <p><a href="mailto:info@gaiaspatial.com" target="_blank"><b>info@gaiaspatial.com</b></a></p>
+        <ul class="social-list">    
+          <li><span class="text-muted"></span></li>  
+          <li class="linkedin"><a href="#" target="_blank"><span></span></a></li>
+          <li class="twitter"><a href="http://twitter.com/GaiaSpatial" target="_blank"><span></span></a></li>
+          <li class="facebook"><a href="#" target="_blank"><span></span></a></li>            
+        </ul>   
+      <!-- <div class="pull-right">&copy; Nadine Trahan 2013</div>  --> 
       </div> 
     </div> <!-- container -->
   

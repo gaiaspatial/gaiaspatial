@@ -3,11 +3,16 @@ function changeLandscapeLayer(newLayer) {
   $('#layerImage').attr("src", newSrc);
   var btnGroup = $("#layerButtons").children();
   $.each(btnGroup, function(i, button){
-    if($(button).hasClass(newLayer)){
+    var buttonId = $(button).attr('id');
+    if(buttonId == newLayer){
       $(button).addClass("active");
+      var newImgSrc = "img/thumb-" + buttonId + "-active.png";
+      $(button).attr('src', newImgSrc);
     } else {
       if($(button).hasClass("active")){
         $(button).removeClass("active");
+        var newImgSrc = "img/thumb-" + buttonId + ".png";
+        $(button).attr('src', newImgSrc);
       }
     }
   });
