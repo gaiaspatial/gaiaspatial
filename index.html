@@ -23,7 +23,17 @@
     } 
     /*http://www.noisetexturegenerator.com/*/ 
     .jumbotron {
-      background-color: #cfcfcf;
+      background-color: transparent;
+      background-image: url('img/homeHeaderBackground.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center bottom;
+      padding: 20px;
+      /*margin-top: 60px;*/
+    }
+    .logo-header {
+      max-height: 130px;  
+      margin: 0 auto 0 auto;
     }
     .blockSummary {
       width: 90%;
@@ -39,6 +49,20 @@
       background-color: rgba(0,0,0,0.3);      
       border-radius: 6px;
       padding: 35px 20px;     
+    }
+    .blockKnowledge {
+      padding: 10px;
+      margin: 5px auto 0 auto; 
+      background-color: rgba(79,104,45,.4);
+      border-radius: 6px;
+    }
+    .knowledgeColumn {
+      background-image: url('img/knowledge_pyramid_darkpath.png');
+      background-size: 100% 100%;
+      padding:30px;
+    }
+    .text-center {
+      text-align: center;
     }
     .label-gaia {
       background-color: #1f3254; 
@@ -69,7 +93,7 @@
     .btn.active {
       font-weight: bold;
     }
-    .arrow-down {
+    /*.arrow-down {
       width: 0; 
       height: 0; 
       border-left: 50px solid transparent;
@@ -78,7 +102,7 @@
       margin-left: auto;
       margin-right: auto;
       margin-bottom: 2px;
-    }
+    }*/
     .arrow-block {
       text-align: center;      
       background-color: #060f1f;
@@ -86,7 +110,7 @@
       border-radius: 6px;
     }
     #globe{
-      text-align: center;
+      text-align: left;
     }
     .footer {
       /*background-color: rgba(0,0,0,0.3);*/      
@@ -133,7 +157,7 @@
       <div class="jumbotron">
         <div class="container">
           <div class="col-sm-9">
-          <img src="img/gaialogo.png" class="img-responsive" alt="" title="">
+          <img src="img/gaialogo.png" class="logo-header img-responsive" alt="" title="">
           </div>
           <div class="col-sm-3" style="padding:0;">
           <div id="globe"></div>
@@ -152,50 +176,46 @@
       <div class="row">
         <div class="col-md-6">
           <div class="blockTitle">
-            <h2><span class="label label-primary label-gaia">From Questions to Insight</span></h2>
-          </div>
-          <div class="blockContent">
-            <div class="row">
-              <div class="col-sm-4">
-                <div class="arrow-block">Environmental Questions</div>
-                <div class="arrow-down"></div>
-                <div class="arrow-block">Geospatial Data</div>
-                <div class="arrow-down"></div>
-                <div class="arrow-block">Landscape Information</div>                
-                <div class="arrow-down"></div>
-                <div class="arrow-block" style="margin-bottom:6px;">Socio-ecological Insight</div>                 
-              </div>
-              <div class="col-sm-8">
-                <p>Gaia Spatial offers unique capabilities in translating environmental <em><b>questions</b></em> to geospatial analysis, maximizing successful selection and implementation of optimal concepts, tools and <em><b>data.</em></b><p>
-                <p>Our approach to geospatial analysis is an iterative process of translation between real world phenomena and simplified representations in order to transform <b>data to <em>information.</em></b> 
-                <p>With our interdisciplinary background and cross-disciplinary liaising skills, we bring integrative perspectives to our partnerships in transforming <b>information to <em>insight.</em></b></p>
-              </div>
-            </div> <!-- row  -->
-                <hr>
-                <p>Ecosystems comprise complex biotic and abiotic nonlinear dynamics, which are most coherently appraised within multi-scalar, multi-dimensional, network and site specific, socio-biophysical context.</p>
-                <p>Framing socio-ecological questions into landscape context advances multi-scalar integrative perspectives.</p>
-                <p>Whether the questions involve dynamics in socio-environmental planning, plant or wildlife distributions, forest health, water quality/quantity or all encompassing climate change, connections between life forms and the resources and habitat they utilize are manifested across landscapes in space and time.</p>
-              
-             
-          </div> <!-- blockContent -->      
-        </div>
-        <div class="col-md-6">
-          <div class="blockTitle">
-              <h2><span class="label label-primary label-gaia">On Multi-Scalar Integrative Analysis</span></h2>
+            <h2><span class="label label-primary label-gaia">Gaia Spatial Approach</span></h2>
           </div>
           <div class="blockContent">            
-            <p>In advancing multi-scalar perspectives, we use sound conceptual models that integrate our understandings of biophysical form-process associations operating within and between key landscape scales. Navigate through the geospatial layers below to learn about significant functional scales.</p>
+            <p>Gaia Spatial approaches geospatial analysis as an iterative process of knowledge development. Questions are translated through a data to information to insight pathway, whereby each step filters out noise, organizes perspectives and grows knowledge.</p>
+            <div class="text-center"><h3 style="margin-bottom:0;">Questions</h3></div>
+            <div class="row knowledgeColumn">                
+                <div class="blockKnowledge">
+                  <div class="text-center"><h4>Geospatial Data</h4></div>
+                  <p>Gaia Spatial offers unique capabilities in translating environmental questions to geospatial analysis, maximizing successful collation and implementation of optimal concepts, tools and  information rich geospatial data.</p>
+                </div>                
+                <div class="blockKnowledge" style="width:90%;">
+                  <div class="text-center"><h4>Landscape Information</h4></div>  
+                  <p>Our approach to geospatial analysis is an iterative process of translation between real world phenomena and simplified representations in order to transform  geospatial data to landscape information.</p> 
+                </div>
+                <div class="blockKnowledge" style="width:80%;">
+                  <div class="text-center"><h4>Socio-Ecological Insights</h4></div>  
+                  <p>Our multi-scalar experience and cross-disciplinary liaising skills, bring a distinct set of perspectives  to our partnerships in transforming landscape framed information to integrative socio-ecological insight.</p>
+                </div>
+            </div> <!-- row  -->    
+            <div class="text-center" ><h3 style="margin-top:0;">Scientific Knowledge</h3></div>                        
+          </div> <!-- blockContent -->
+        </div> <!-- col-md-6 -->       
+        
+        <div class="col-md-6">
+          <div class="blockTitle">
+              <h2><span class="label label-primary label-gaia">Advancing Integrative Insights</span></h2>
+          </div>
+          <div class="blockContent">            
+            <p>By framing questions within site specific landscape context, we are able to integrate discipline bound knowledge in relation to landscape characteristics and dynamics to provide site specific, multi-scalar, biophysical frameworks. Navigate through the layers below to learn about key functional aquatic landscape scales.</p>
             <div class="row">
               <div class="col-sm-8">
                 <img id="layerImage" src="img/layer-ecoregions.png" class="img-responsive" alt="" title="">
               </div>
               <div class="col-sm-4">
                 <div id="layerButtons">
-                  <button type="button" class="btn btn-primary btn-layers ecoregions active" onclick="changeLandscapeLayer('ecoregions')">Ecoregions</btn>            
-                  <button type="button" class="btn btn-primary btn-layers watersheds" onclick="changeLandscapeLayer('watersheds')">Watersheds</btn>            
-                  <button type="button" class="btn btn-primary btn-layers landscapes" onclick="changeLandscapeLayer('landscapes')">Landscape Units</btn>            
-                  <button type="button" class="btn btn-primary btn-layers stands" onclick="changeLandscapeLayer('stands')">Stands & Reaches</btn>            
-                  <button type="button" class="btn btn-primary btn-layers habitats" onclick="changeLandscapeLayer('habitats')">Habitat Units</btn>
+                  <button type="button" class="btn btn-primary btn-layers ecoregions active" onclick="changeLandscapeLayer('ecoregions')">Ecoregion</btn>            
+                  <button type="button" class="btn btn-primary btn-layers watersheds" onclick="changeLandscapeLayer('watersheds')">Watershed</btn>            
+                  <button type="button" class="btn btn-primary btn-layers landscapes" onclick="changeLandscapeLayer('landscapes')">Landscape Unit</btn>            
+                  <button type="button" class="btn btn-primary btn-layers stands" onclick="changeLandscapeLayer('stands')">Reach</btn>            
+                  <button type="button" class="btn btn-primary btn-layers habitats" onclick="changeLandscapeLayer('habitats')">Habitat Unit</btn>
                 </div> <!-- layerButtons -->
               </div> <!-- col-sm-4 -->
             </div> <!-- row -->
