@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gaia Spatial</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/custom.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!--comment!-->
+
+    <style type="text/css">
+
+    body {
+      padding: 5px 30px 30px 30px;
+      background-image:url('img/global_landscapes.png');
+      background-size:100%;
+      background-repeat:no-repeat;
+      color: black;
+    } 
+    /*http://www.noisetexturegenerator.com/*/ 
+    .jumbotron {
+      background-color: transparent;
+     <!--  background-image: url('img/homeHeaderBackground.png');
+      background-size: 90%;
+      background-repeat: no-repeat;
+      background-position-y: 230px;
+      padding: 0px 0px 0px 0px;-->
+
+      /*margin-top: 60px;*/
+    }
+    .logo-header {
+      max-height: 130px;  
+      margin: 20px 55px;
+    }
+
+    .blockTitle {
+      text-align: center;
+      font-variant: small-caps;
+      margin-bottom: 0px;
+      width:100%;
+      color:black;
+    }
+    .row {
+      /*background-color: white; opacity:0.82;
+      background-size: 60%;
+      background-repeat: no-repeat;
+      background-position: center top;
+      padding: 10px 10px 10px 10px;
+      min-height:300px;
+      margin-top: 0px;
+      font-weight:bold;*/
+
+    }
+    .blockContent {
+      border-radius: 6px;
+      padding: 10px 10px 10px 10px;
+      margin: 20px 20px 60px 20px;
+    }
+    .blockKnowledge {
+      padding: 10px;
+      margin: 5px auto 0 auto; 
+      background-color: rgba(79,104,45,.4);
+      border-radius: 6px;
+    }
+    .knowledgeColumn {
+      background-image: url('img/knowledge_pyramid_darkpath.png');
+      background-size: 100% 100%;
+      padding:30px;
+    }
+    .text-center {
+      text-align: center;
+    }
+    .label-gaia {
+    padding:15px 40px 15px 40px;
+    color:white;
+    background-color:rgba(10, 40, 14, 0.57);
+    border-top-left-radius: 60px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 75px;
+      white-space: normal;
+      display: inline-block;
+      max-width: 100%;
+      font-size:large;
+
+    }
+    .btn-layers {
+      width: 100%;
+      white-space: normal;
+      background-color: #030e22;
+      border-color: #030e22;
+    }
+    .btn-layers:hover{
+      background-color: #1f3254;
+      border-color: #1f3254;
+    }
+    .btn-layers.active{
+      background-color: #1f3254;
+      border-color: #1f3254;
+    }
+    #layerButtons .btn{
+      margin-bottom: 4px;
+    }
+    #layerButtons img{
+      cursor: pointer;
+    }
+    #layerImage {
+      margin-bottom: 6px;
+    }
+    .btn.active {
+      font-weight: bold;
+    } 
+    .arrow-block {
+      text-align: center;      
+      background-color: #060f1f;
+      padding: 15px 10px;
+      border-radius: 6px;
+    }
+    #globe{
+      text-align: center;
+    }
+    .blockSummary {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .footer {
+      padding: 20px 35px;  
+      color: #999;
+      text-align: center;
+    }   
+    .social-list {
+      padding: 0;
+      margin-left: -6px;
+    }
+    .footer a:link, .social-list a:visited {
+      color: #5a5a5a;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .social-list li {
+      display: inline-block;      
+    }
+    .social-list span {
+      float: left;
+    }    
+    .social-list li {
+      display: inline-block;
+      margin-left: 5px;
+    }
+    .social-list li.linkedin {
+      margin-left: 0;
+    }
+    .social-list span {
+      float: left;
+    }
+    .social-list li.linkedin span {
+      background: url("../img/linkedin_grey.png");
+      background-repeat: no-repeat;
+      height: 25px;
+      width: 25px;
+    }
+    .social-list li.linkedin a:hover span {
+      background: url("../img/linkedin_color.png");
+      background-repeat: no-repeat;
+      height: 25px;
+      width: 25px;
+    }
+    .social-list li.twitter span {
+      background: url("../img/twitter_grey.png");
+      background-repeat: no-repeat;
+      height: 25px;
+      width: 25px;
+    }
+    .social-list li.twitter a:hover span {
+      background: url("../img/twitter_color.png");
+      background-repeat: no-repeat;
+      height: 25px;
+      width: 25px;
+    }
+    .social-list li.facebook span {
+      background: url("../img/facebook_grey.png");
+      background-repeat: no-repeat;
+      height: 25px;
+      width: 25px;
+      cursor: pointer;
+    }
+    .social-list li.facebook a:hover span {
+      background: url("../img/facebook_color.png");
+      background-repeat: no-repeat;
+      height: 25px;
+      width: 25px;
+    }
+    .nav-bar ul span{
+    list-style-type:none;
+    margin-left:0px;
+    padding:0px;
+    color:black;
+        }
+
+    li {
+    display:inline;
+    width:70%;
+    background-color:rgba(1, 1, 1, 0.5);
+    border-top-left-radius: 60px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 75px;
+    border-color: rgba(16,40,68,0.7);
+    border-width: 10px;
+    padding: 10px;
+    text-align:center;
+    font-weight:bold;
+  }
+
+
+    
+  .nav-bar li a:link{
+    cursor: pointer;
+    text-decoration: none;
+    /*border-style: solid;*/
+    border-top-left-radius: 60px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 75px;
+    /*background-color:rgba(100, 100, 1, 0.5);
+    border-color: rgba(1,4,6,0.9);
+    padding: 200px;*/
+
+    }
+  .nav-bar li a:visited{
+    cursor: pointer;
+    text-decoration: none;
+    border-style: solid;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 75px;
+    }
+
+  .nav-bar li a:hover{
+    cursor: pointer;
+    text-decoration: none;
+    /*border-style: solid;*/
+    border-top-left-radius: 60px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 75px;
+    background-color:rgba(1, 1, 1, 0.9);
+    /*border-color: rgba(1,4,6,0.9);*/
+    padding: 100px;
+
+    }
+
+    .nav-bar li input:focus {
+    cursor: pointer;
+    text-decoration: none;
+    /*border-style: solid;*/
+    border-top-left-radius: 60px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 75px;
+    background-color:rgba(100, 1, 1, 0.8);
+    /*border-color: rgba(1,4,6,0.9);*/
+    }
+
+
+
+    p.big {line-height:160%; word-spacing:3px;}
+  </style> 
+</head>
+
+  <body>  
+
+    <div class="container">
+      <div class="jumbotron">
+        <div class="row">
+          <!--<div class="col-sm-3">
+
+         </div>-->
+
+            <div class="col-sm-9">
+          <img src="img/gaialogo.png" class="logo-header img-responsive" alt="" title="">
+          <ul class = "nav-bar"style= "margin: 30px 10px 10px 75px; font-size: 15px;">
+<li><a href="index.html" style="color:white; padding:12px 20px 12px 20px">Home</a></li>
+<li><a href= "whatelse.html" style="color:white; padding:12px 20px 12px 20px">WhatElse</a></li>
+<li><a href="services.html" style="color:white; padding:12px 20px 12px 20px">Services</a></li>
+<li><a href="#resources.html" style="color:white; padding:12px 20px 12px 20px">Resources</a></li>
+<li><a href="about.html" style="color:white; padding:12px 20px 12px 20px">About</a></li>
+</ul>
+        
+
+
+
+
+
+         <!-- <div id="text-intro" style="font: caption;  background-color: rgba(1,1,1,.7); color:white; padding:10px 5px 10px 25px; margin: 25px 25px 5px 285px; border-radius:15px;">
+<p class="big">Gaia Spatial is an environmental geospatial consultancy, offering expertise in integrative, landscape framed analysis to understand habitats, natural resources and the biodiversity they sustain. 
+ <p>
+          </div> text-intro-->
+
+          </div>
+ <div class="col-sm-3" style="padding-top:20px;">
+          <div id="globe"></div>
+
+        </div>  <!-- col-sm-3 --> 
+
+<!--<div id="text-intro" style="font-size: 16px;  background-color: rgba(1,1,1,.5); color:white; padding:10px; margin: 25px 0px 0px 5px;">
+<p class="big">Gaia Spatial is an environmental geospatial consultancy, offering expertise in integrative, landscape framed analysis to understand habitats, natural resources and the biodiversity they sustain. 
+ <p>
+          </div> text-intro-->
+       
+
+      </div> <!-- row -->
+    </div> <!-- jumbotron -->
+      </div> <!--container-->
+
+      
+     <!-- <div class = "row">
+          <div class ="col-md-9" style="background-color: white; opacity: 0.65; font-weight: bold; font-size: small; margin-top: 30px">
+  
+        </div>
+
+      <div class="row" style="background-color:red"> 
+      style="background-color:white; opacity: 0.75; font-size: small; margin:100px">-->
+        <div class="row" style= "margin:-50px 160px 50px 250px">
+        <div class="col-sm-9" style="margin:0px 0px 0px 0px; padding: 20px; background-color:rgba(255,255,255,0.7);  color:black; font-family:sans-serif; font-size:15px; font-weight:600; border-top-right-radius: 500px; border-top-left-radius:25px; width:70%">
+         <p>Gaia Spatial is an environmental geospatial consultancy, offering expertise in integrative, landscape framed analysis to understand habitats, natural resources and the biodiversity they sustain. Transforming Geospatial Data to Landscape Information to Socio-ecological Insights</p>
+         </div>
+
+         </div>
+       </div>
+        <div class="row" style= "margin:0px 60px 0px 120px">
+        <div class="col-md-9" style= "width:70%; background-color:rgba(255,255,255,0.8); font-size: small; margin-top:0px">
+        <div class="col-md-4" style="color:black; font-size: small">
+          <div class="blockTitle">
+            <h2><span class="label label-primary label-gaia" style="color:black">Geospatial Data</span></h2>
+          </div>
+          <div class="blockContent">            
+            <p>We offer sourcing and value added geospatial data management, acquisition, documentation & distribution including:</p>    
+            <div id="bullets" style='background-color:white'>
+            <ul style="background-color:white">
+            <li>Coffee</li>
+            <li>Milk</li>
+            </ul>
+</div>
+          </div> <!-- blockContent -->
+
+
+
+        </div> <!-- col-md-4 -->     
+
+        <div class="col-md-4" style= "font-size: 13">
+          <div class="blockTitle">
+            <h2><span class="label label-primary label-gaia" style="color:black">Landscape Information</span></h2>
+          </div><!--blockTitle-->
+          <div class="blockContent"> 
+            <p>We derive landscape information from geospatial data to construct integrated, multi-scalar, biophysical context, including:</p>
+          </div> <!-- blockContent -->
+         </div> <!-- col-md-4 -->    
+
+        <div class="col-md-4" style= "font-size: small">
+          <div class="blockTitle">
+            <h2><span class="label label-primary label-gaia" style="color:black">Socio-ecological Insight</span></h2>
+           </div><!--blockTitle-->
+          <div class="blockContent"> 
+            <p>We frame project specific questions within landscape context to gain insights relevant to socio-ecological sustainability, such as:</p>
+          </div> <!-- blockContent -->
+         </div> <!-- col-md-4 -->  
+        </div>
+        <div class="col-md-3" style="margin:-60px 0px 0px 40px; padding:20px; background-color:white; opacity:0.75; width:22%">
+                    
+       <!--<div id="spotlights" style="background-color:white; opacity: 0.75; font-size: small; text-align:center">-->
+         <div id="spotlightstitle" style="margin:0px 0px 0px 40px; padding:10px 20px 10px 20px; background-color:rgba(1,1,1,0.6);  color:white; font-family:serif; font-size:14px; font-weight:bold; text-align:center; border-top-right-radius: 25px; border-top-left-radius:25px; width:22%">
+         <p> SPOTLIGHTS</p>
+         >/div>
+          <p>Ecological Drones<p> 
+          <p>Interdisciplinary Biophysical Science<p> 
+          <p>Landscape Framed Ecological Systems<p> 
+          <p>Geospatail Technologies<p> 
+          <p>Gaia Spatial Blog<p> 
+
+  
+
+      <hr style="margin:70px 0 0 0;">
+      <div class="row footer">
+        <div class="col-md-12 blockFooter">
+        <h5><b>Contact Us:</b></h5>
+        <p>337-255-6952</p>
+        <p><a href="mailto:info@gaiaspatial.com" target="_blank"><b>info@gaiaspatial.com</b></a></p>
+        <ul class="social-list">    
+          <li><span class="text-muted"></span></li>  
+          <li class="linkedin"><a href="#" target="_blank"><span></span></a></li>
+          <li class="twitter"><a href="http://twitter.com/GaiaSpatial" target="_blank"><span></span></a></li>
+          <li class="facebook"><a href="#" target="_blank"><span></span></a></li>            
+        </ul>   
+      <!-- <div class="pull-right">&copy; Nadine Trahan 2013</div>  --> 
+       </div> 
+    </div> <!-- container -->
+  
+   </div> 
+    
+    <script src="js/jquery-1.9.1.min.js"></script>    
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/d3.v3.min.js"></script>
+    <script src="js/topojson.v1.min.js"></script>
+    <script src="js/fit-projection.js"></script>
+    <script src="js/main.js"></script>
+
+  </body>
+
+</html>

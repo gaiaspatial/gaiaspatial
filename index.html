@@ -22,39 +22,71 @@
     <style type="text/css">
 
     body {
-      padding: 30px 10px 0 10px;
-      background-image:url('img/noisy-texture-100x100-o6-d12-c-111b2e-t0.png');
-      color: #f5f5f5;
+      padding: 1% 1% 1% 1%;
+      background-image:url('img/global_landscapes.png');
+      background-size:100%;
+      background-repeat:no-repeat;
+      color: black;
     } 
     /*http://www.noisetexturegenerator.com/*/ 
+    .container {max-width:110%;
+     /* margin:0px; padding:0px; max-width:100%; min-width:20%;
+    }
     .jumbotron {
       background-color: transparent;
-      background-image: url('img/homeHeaderBackground.png');
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center bottom;
-      padding: 20px;
+      padding: 0px;
+      margin:0px;
+      /*background-repeat: no-repeat;
+      background-position-y: 10px;
       /*margin-top: 60px;*/
     }
     .logo-header {
-      max-height: 130px;  
-      margin: 0 auto 0 auto;
+      width: 65%;
+      margin-top: 5%;
     }
-    .blockSummary {
-      width: 90%;
-      margin-left: auto;
-      margin-right: auto;
+    .globe {padding:3%;
     }
+
     .blockTitle {
-      text-align: center;
-      font-variant: small-caps;
-      margin-bottom: -25px;
+      /*text-align: center;*/
+      font-variant: italic;
+      margin-bottom: 0px;
+      width:100%;
+color: rgb(22, 36, 136);
+text-align: left;
+font-weight: bold;
+line-height: 30px;
+    }
+    .row {
+      /*padding:20px;
+
+      /*background-color: white; opacity:0.82;
+      background-size: 60%;
+      background-repeat: no-repeat;
+      background-position: center top;
+      padding: 10px 10px 10px 10px;
+      min-height:300px;
+      margin-top: 0px;
+      font-weight:bold;
+            min-height:600px;
+      margin-top: 0px;*/
+
     }
     .blockContent {
-      background-color: rgba(0,0,0,0.3);      
-      border-radius: 6px;
-      padding: 35px 20px;     
+     
+      padding: 20px 20px 20px 20px;}
+      /*width:80%;}
+      margin-right:10px;
+     /*width:100%;
+      border-style:solid;
     }
+      /*border-color:rgba(1,1,1,0.95);
+      border-top-left-radius: 60px;
+      border-top-right-radius: 10px;
+      border-bottom-left-radius: 12px;
+      border-bottom-right-radius: 75px;
+      width:100%;
+    }*/
     .blockKnowledge {
       padding: 10px;
       margin: 5px auto 0 auto; 
@@ -70,11 +102,39 @@
       text-align: center;
     }
     .label-gaia {
-      background-color: #1f3254; 
+    padding:5px 15px 5px 15px;
+    color:white;
+    background-color:rgba(255, 255, 255, 0.7);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 0px;
       white-space: normal;
-      display: inline-block;
-      max-width: 85%;
+    border-style:solid;
+    border-width:2px;
+      max-width: 120%;
+      font-size:16px;
+      border-color:rgba(46, 97, 46, 0.7);
     }
+        .label-spotlights {
+    padding:15px 50px 15px 50px;
+    color:white;
+    background-color:rgba(250, 248, 231, 0.7);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+      white-space: normal;
+    border-top-style:solid;
+    border-width:3px;
+      max-width: 100%;
+      font-size:large;
+            border-color:rgba(114, 104, 33, 0.7);
+    }
+
+
+
+
     .btn-layers {
       width: 100%;
       white-space: normal;
@@ -97,7 +157,6 @@
     }
     #layerImage {
       margin-bottom: 6px;
-      background-color: #f5f5f5;
     }
     .btn.active {
       font-weight: bold;
@@ -109,7 +168,12 @@
       border-radius: 6px;
     }
     #globe{
-      text-align: left;
+      text-align: right
+    }
+    .blockSummary {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
     }
     .footer {
       padding: 20px 35px;  
@@ -178,137 +242,221 @@
       height: 25px;
       width: 25px;
     }
+    .nav 
+    .nav-bar ul span{
+    list-style-type:none;
+    margin-left:0px;
+    padding:0px;
+    color:black;
+    width:80%;
+        }
 
-    </style> 
-  </head>
+    li {
+    display:inline;
+    width:40%;
+    text-align:center;
+    font-weight:bold;
+    padding:0px;  }
+
+  /*border-top-left-radius: 10px;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 75px;
+    border-bottom-right-radius: 15px;
+    border-color: rgba(19, 48, 10, 0.7);
+    border-width: 10px;
+    padding:8px;*/
+
+
+
+    
+  .nav-bar li a:link{
+    cursor: pointer;
+    text-decoration: none;
+    /*border-style: solid;*/
+    }
+
+  .nav-bar li a:visited{
+    cursor: pointer;
+    text-decoration: none;
+    border-style: solid;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 75px;
+    background-color:rgba(100, 1, 1, 0.9);
+    /*border-color: rgba(1,4,6,0.9);
+    padding: 0px;*/
+    }
+
+  .nav-bar li a:hover{
+    cursor: pointer;
+    text-decoration: none;
+    /*border-style: solid;*/
+    border-top-left-radius: 60px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 75px;
+    background-color:rgba(10, 28, 48, 0.7);
+    /*border-color: rgba(1,4,6,0.9);*/
+    padding: 10px;
+    }
+
+    p.big {line-height:160%; word-spacing:3px;}
+
+    #grad1
+    {
+      padding: 25px;
+      background: -webkit-linear-gradient(left, rgba(240, 235, 229, 0.8), rgba(238, 234, 229, 0.7), rgba(243, 238, 232, 0.6), rgba(243, 238, 232, 0.5), rgba(2, 8, 54, 0.5));
+      }
+
+
+
+
+
+      /*border-top-left-radius: 50px;
+      border-top-right-radius: 50px;*/
+        
+   .mainContent {border-style:solid; border-color:rgba(1,1,1,1); border-width: 10px; border-top-left-radius: 35px;} 
+
+  </style> 
+</head>
 
   <body>  
-
     <div class="container">
-      <div class="jumbotron">
-        <div class="container">
-          <div class="col-sm-9">
-          <img src="img/gaialogo.png" class="logo-header img-responsive" alt="" title="">
-          </div>
-          <div class="col-sm-3" style="padding:0;">
-          <div id="globe"></div>
-          </div>          
+     <!-- <div class="jumbotron">-->
+
+
+        <div class="row" style="width:100%;">
+
+
+            <div class="col-sm-8" style="width:60%; margin-left:10%; padding 3%">
+              <img src="img/gaialogo.png" class="logo-header img-responsive" alt="" title="">
+
+            </div> <!-- col-sm-4 --> 
+            <div class="col-sm-3" style="padding-top:10px; width:20%">
+              <div id="globe"></div>
+            </div>  <!-- col-sm-3 --> 
+
+     <!-- </div> jumbotron -->
+        </div><!-- row -->
+
+            
+
+<ul class = "nav-bar"style= "width: 50%; margin: -2px 0px 0px 11%; padding:5px 5px 5px 5px; font-size: 13px; background-color:rgba(10, 28, 48, 0.7)"> 
+<!--border-top-left-radius: 60px;
+border-top-right-radius: 10px;
+border-bottom-left-radius: 12px;
+border-bottom-right-radius: 0px;-->
+                <li><a href="index.html" style="color:white; padding:12px 20px 12px 20px; 
+    border-top-left-radius: 60px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 75px;
+    background-color:rgba(10, 28, 48, 0.7);" >Home</a></li>
+                <li><a href= "whatelse.html" style="color:white; padding:12px 20px 12px 20px">WhatElse</a></li>
+                <li><a href="services.html" style="color:white; padding:12px 20px 12px 20px">Services</a></li>
+                <li><a href="#resources.html" style="color:white; padding:12px 20px 12px 20px">Resources</a></li>
+                <li><a href="about.html" style="color:white; padding:12px 20px 12px 20px">About</a></li>
+              </ul>
+
+        <div class="row" style="margin: 0px 5%;">
+
+            <div class="col-sm-12" style="margin:5% 15%;
+padding: 20px 15px 20px 20px;
+color: rgb(255, 255, 255);
+font-family: sans-serif;
+font-size: 18px;
+font-weight: 600;
+border-top-right-radius: 70px;
+border-style: none;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 25px;
+border-bottom-right-radius: 10px;">
+              <p>
+              Gaia Spatial is an environmental geospatial consultancy, offering expertise in integrative, landscape framed analysis to understand habitats, natural resources and the biodiversity they sustain.
+              </p>
+            </div>
         </div>
-      </div> 
-      
-      <div class="row">
-        <div class="col-md-12 blockSummary">
-          <hr>
-          <h3>Gaia Spatial, LLC is an environmental geospatial consultancy, specializing in multi-scalar integrative analysis to explore, interpret, describe, explain, predict, conserve and restore sustainable landscape based form-process associations and patterns with respect to the life they sustain.</h3>
-          <hr>
-        </div>
+
+
+
+
+    <div class="row" style= "margin: 0px 5%; font-size: 11px;">
+
+
+        <div class="col-sm-9" style="border-style:solid; border-width: 3px; padding-right:4%">
+
+      <div class="col-sm-4" style="color:black; font-size: 13px;">
+        <div id='grad1'>
+          <div class="blockContent" style= "width:100%;">  
+           <div class="blockTitle">         
+            <p>Geospatial Data<p>
+              <p>       <p>
+            </div>
+            <p>and value added geospatial data management, acquisition, documentation & distribution including:</p> 
+                       <div class="blockTitle">         
+            <p>Landscape Information<p>
+            </div>
+            <p>Gaia Spatial is an environmental geospatial consultancy, offering expertise in integrative, landscape framed analysis to understand habitats, natural resources and the biodiversity they sustain.</p>
+            <div class="blockTitle">         
+            <p>Socio-ecological Insight <p>
+            </div>
+            <p>Gaia Spatial is an environmental geospatial consultancy, offering expertise in integrative, landscape framed analysis to understand habitats, natural resources and the biodiversity they sustain.</p>   
+          </div> <!-- blockContent -->
+      </div> <!-- col-md-4 -->     
+   </div>
+
+      <div class="col-sm-8"> 
+        <div class="blockContent" style="background-image: url(img/intgeoinsight.png); background-size: contain; background-repeat: no-repeat; padding:50%; margin-left:0%; background-color: rgba(2, 8, 54, 0.5); width:110%">
+        </div>  
       </div>
 
-      <div class="row">
-        <div class="col-md-6">
-          <div class="blockTitle">
-            <h2><span class="label label-primary label-gaia">Gaia Spatial Approach</span></h2>
-          </div>
-          <div class="blockContent">            
-            <p>Gaia Spatial approaches geospatial analysis as an iterative process of knowledge development. Questions are translated through a data to information to insight pathway, whereby each step filters out noise, organizes perspectives and grows knowledge.</p>
-            <div class="text-center"><h3 style="margin-bottom:0;">Questions</h3></div>
-            <div class="row knowledgeColumn">                
-                <div class="blockKnowledge">
-                  <div class="text-center"><h4>Geospatial Data</h4></div>
-                  <p>Gaia Spatial offers unique capabilities in translating environmental questions to geospatial analysis, maximizing successful collation and implementation of optimal concepts, tools and  information rich geospatial data.</p>
-                </div>                
-                <div class="blockKnowledge" style="width:90%;">
-                  <div class="text-center"><h4>Landscape Information</h4></div>  
-                  <p>Our approach to geospatial analysis is an iterative process of translation between real world phenomena and simplified representations in order to transform  geospatial data to landscape information.</p> 
-                </div>
-                <div class="blockKnowledge" style="width:80%;">
-                  <div class="text-center"><h4>Socio-Ecological Insights</h4></div>  
-                  <p>Our multi-scalar experience and cross-disciplinary liaising skills, bring a distinct set of perspectives  to our partnerships in transforming landscape framed information to integrative socio-ecological insight.</p>
-                </div>
-            </div> <!-- row  -->    
-            <div class="text-center" ><h3 style="margin-top:0;">Scientific Knowledge</h3></div>                        
-          </div> <!-- blockContent -->
-        </div> <!-- col-md-6 -->       
-        
-        <div class="col-md-6">
-          <div class="blockTitle">
-              <h2><span class="label label-primary label-gaia">Advancing Integrative Insights</span></h2>
-          </div>
-          <div class="blockContent">            
-            <p>By framing questions within site specific landscape context, we are able to integrate discipline bound knowledge in relation to landscape characteristics and dynamics to provide site specific, multi-scalar, biophysical frameworks. Navigate through the layers below to learn about key functional aquatic landscape scales.</p>
-            <div class="row">
-              <div class="col-sm-8">
-                <img id="layerImage" src="img/layer-ecoregion.png" class="img-responsive" alt="" title="">
-              </div>
-              <div class="col-sm-4">
-                <div id="layerButtons">
-                  <img id="ecoregion" class="img-responsive active" src="img/thumb-ecoregion-active.png" onclick="changeLandscapeLayer('ecoregion')">                            
-                  <button id="watersheds" type="button" class="btn btn-primary btn-layers watersheds" onclick="changeLandscapeLayer('watersheds')">Watershed</btn>            
-                  <button id="landscapes" type="button" class="btn btn-primary btn-layers landscapes" onclick="changeLandscapeLayer('landscapes')">Landscape Unit</btn>            
-                  <button id="stands" type="button" class="btn btn-primary btn-layers stands" onclick="changeLandscapeLayer('stands')">Reach</btn>            
-                  <button id="habitats" type="button" class="btn btn-primary btn-layers habitats" onclick="changeLandscapeLayer('habitats')">Habitat Unit</btn>
-                </div> <!-- layerButtons -->
-              </div> <!-- col-sm-4 -->
-            </div> <!-- row -->
-            <div id="layerTexts">
-              <div class="ecoregion">
-                <h2>Ecoregion</h2>
-                <p>Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.</p>
-                <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
-                <p>Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. </p>
-              </div>
-              <div class="watersheds" style="display:none">
-                <h2>Watersheds</h2>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-                <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
-                <p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
-              </div>
-              <div class="landscapes" style="display:none">
-                <h2>Landscape Units</h2>
-                <p>Odio cum fusce turpis. Aliquam aptent cursus duis litora Dis hac id at fames cursus risus ipsum torquent cursus maecenas parturient.</p>
-                <p>Vulputate primis platea. Dignissim ridiculus nunc vestibulum non ultrices curae; tincidunt dictum cubilia. Magna proin praesent consequat, volutpat fames. Id scelerisque leo sagittis ad torquent auctor facilisis. Sem taciti phasellus phasellus congue montes.</p>
-                <p>Auctor velit ante lorem litora, conubia aenean. Est ridiculus elementum, ipsum semper, habitasse at mollis, inceptos dolor commodo facilisis dis consequat justo. Potenti ligula at. Sociis.</p>
-              </div>
-              <div class="stands" style="display:none">
-                <h2>Stands and Reaches</h2>
-                <p>Justo nulla augue scelerisque. Nisl sit lectus placerat ac ad fames pellentesque erat a. Molestie varius ante diam aliquet. Scelerisque pharetra dui vehicula convallis sociis ornare lacus pretium sagittis. Porta. Rhoncus iaculis.</p>
-                <p>Pede viverra bibendum aptent viverra ultrices. Auctor maecenas dignissim adipiscing scelerisque vitae massa cum ligula neque. Lacus penatibus maecenas bibendum tincidunt.</p>
-                <p>Aenean. Lobortis vivamus arcu in libero lacinia praesent. Vivamus. Etiam pretium eu auctor potenti natoque in odio proin magnis netus pharetra habitant ac suspendisse, fringilla quis class.</p>
-              </div>
-              <div class="habitats" style="display:none">
-                <h2>Habitat Units</h2>
-                <p>Tempus justo taciti. Phasellus varius. Nisl, tortor platea convallis. Ultricies fames netus dictumst pulvinar nam mauris est vehicula.</p>
-                <p>Vitae felis parturient morbi suspendisse ac pede dignissim tempus. Cras duis fringilla natoque adipiscing sociosqu. Aliquam consectetuer enim at erat. Eleifend lacinia quisque sed morbi egestas varius enim, diam et nunc. Lacus eleifend neque sit platea.</p>
-                <p>Erat tempus nec fermentum porttitor urna sit enim tortor quis habitant magna quisque nonummy placerat. Ligula. Placerat. Commodo integer mauris Torquent sodales Luctus tellus velit. Luctus.</p>
-              </div>
-            </div> <!-- layerTexts -->
-            <hr>
-            <br>
-            <div class="text-center"><p>"What we see depends mainly on what we look for." <br> - John Lubbock</p></div>
+
+</div>
+<!--..........................................................................-->
+
+
+        <div class="col-sm-3" style="border-style: inset;
+padding: 10px; width:20%; margin-left:2.5%; background-color: rgba(1,1,1,0.5);">
 
 
 
-          </div> <!-- blockContent -->
-          
-          
-        </div> <!-- col-md-6    -->     
-      </div> <!-- row -->
-      <hr style="margin:70px 0 0 0;">
-      <div class="row footer">
-        <h5><b>Contact Us:</b></h5>
-        <p>337-255-6952</p>
-        <p><a href="mailto:info@gaiaspatial.com" target="_blank"><b>info@gaiaspatial.com</b></a></p>
-        <ul class="social-list">    
+
+        <div class="blockTitle">
+         <div id="spotlightstitle" style="color:white; text-align: center; font-weight: bold; font-size: 16px; border-top-left-radius: 35px; border-top-right-radius: 35px; padding:5px">
+         <p> SPOTLIGHTS</p></div>
+       </div>
+       <div class="blockContent" style="color:white; text-align: center; width:100%;">
+          <p>Ecological Drones<p> 
+          <p>Interdisciplinary Biophysical Science<p> 
+          <p>Landscape Framed Ecological Systems<p> 
+          <p>Geospatail Technologies<p> 
+          <p>Gaia Spatial Blog<p> 
+       </div>
+       <ul class="social-list">    
           <li><span class="text-muted"></span></li>  
           <li class="linkedin"><a href="#" target="_blank"><span></span></a></li>
           <li class="twitter"><a href="http://twitter.com/GaiaSpatial" target="_blank"><span></span></a></li>
           <li class="facebook"><a href="#" target="_blank"><span></span></a></li>            
         </ul>   
+      </div>
+      </div>
+
+
+
+<!--..........................................................................-->
+      <hr style="margin:70px 0 0 0;">
+      <div class="row footer">
+        <div class="col-md-12 blockFooter">
+        <h5><b>Contact Us:</b></h5>
+        <p>337-255-6952</p>
+        <p><a href="mailto:info@gaiaspatial.com" target="_blank"><b>info@gaiaspatial.com</b></a></p>
+        
       <!-- <div class="pull-right">&copy; Nadine Trahan 2013</div>  --> 
-      </div> 
+       </div> 
     </div> <!-- container -->
   
-    
+
     
     <script src="js/jquery-1.9.1.min.js"></script>    
     <script src="js/bootstrap.min.js"></script>

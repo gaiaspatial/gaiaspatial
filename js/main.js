@@ -62,8 +62,8 @@ function getGlobeData(){
 
 function initSizes() {
   width = $("#globe").width();
-  if(width > 150){
-    width = 150;
+  if(width >100){
+    width = 190;
   };
   height = width;
   projection.translate([width/2,height/2]);
@@ -77,7 +77,7 @@ function initSizes() {
 
 
 var fitMapProjection = function() {
-  fitProjection(projection, world, [[10, 10], [width-15, height-15]], true);
+  fitProjection(projection, world, [[10, 10], [width-3, height-3]], true);
   drawGlobe();
 };
 

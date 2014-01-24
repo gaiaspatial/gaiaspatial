@@ -34,9 +34,9 @@
 
 
 .Country{
-    fill: rgba(0,30,0,0.6);
+    fill: rgba(250,230,200,0.2); 
 }
 
 .Ocean{
-    fill: rgba(30,30,100,0.6);
+    fill: rgba(16,40,68,0.7); outline-width:thick; outline-color:black;
 }

@@ -129,7 +129,7 @@ img {
 }
 
 svg:not(:root) {
-  overflow: hidden;
+  overflow: hidden; padding:1%;
 }
 
 figure {
@@ -324,14 +324,15 @@ textarea {
 }
 
 a {
-  color: #428bca;
+  color: white;
   text-decoration: none;
 }
 
 a:hover,
 a:focus {
   color: #2a6496;
-  text-decoration: underline;
+  text-decoration: none;
+  color:red;
 }
 
 a:focus {
@@ -390,7 +391,7 @@ hr {
 }
 
 p {
-  margin: 0 0 10px;
+  margin: 0 0 0 0px;
 }
 
 .lead {
@@ -487,8 +488,8 @@ h6 small,
 h1,
 h2,
 h3 {
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 h4,
@@ -716,7 +717,7 @@ code {
 pre {
   display: block;
   padding: 9.5px;
-  margin: 0 0 10px;
+  margin: 0 0 0px;
   font-size: 13px;
   line-height: 1.428571429;
   color: #333333;
@@ -746,8 +747,8 @@ pre code {
 }
 
 .container {
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 5px;
+  padding-left: 5px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -773,8 +774,8 @@ pre code {
 }
 
 .row {
-  margin-right: -15px;
-  margin-left: -15px;
+  margin-right: 25px;
+  margin-left: 25px;
 }
 
 .row:before,
@@ -847,8 +848,8 @@ pre code {
 .col-lg-12 {
   position: relative;
   min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 5px;
+  padding-left: 5px;
 }
 
 .col-xs-1,
@@ -871,6 +872,7 @@ pre code {
 
 .col-xs-2 {
   width: 16.666666666666664%;
+  margin-right:10px;
 }
 
 .col-xs-3 {
@@ -938,6 +940,7 @@ pre code {
   }
   .col-sm-3 {
     width: 25%;
+    padding-top:40px;
   }
   .col-sm-4 {
     width: 33.33333333333333%;
@@ -1232,7 +1235,7 @@ pre code {
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1170px;
+    max-width: 1500x;
   }
   .col-lg-1,
   .col-lg-2,
@@ -3810,7 +3813,8 @@ textarea.input-group-sm > .input-group-btn > .btn {
   padding: 10px 15px;
 }
 
-.nav > li > a:hover,
+.nav > li > a:hover, 
+{color:red;}
 .nav > li > a:focus {
   text-decoration: none;
   background-color: #eeeeee;
@@ -3837,7 +3841,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 
 .nav .nav-divider {
   height: 1px;
-  margin: 9px 0;
+  margin: 3px 0;
   overflow: hidden;
   background-color: #e5e5e5;
 }
@@ -4831,12 +4835,12 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .label-primary {
-  background-color: #428bca;
+  background-color: rgba(187, 177, 65, 0.56);
 }
 
 .label-primary[href]:hover,
 .label-primary[href]:focus {
-  background-color: #3071a9;
+  background-color: rgba(187, 177, 65, 0.56);
 }
 
 .label-success {
@@ -4917,18 +4921,17 @@ a.list-group-item.active > .badge,
 }
 
 .jumbotron {
-  padding: 30px;
-  margin-bottom: 30px;
+  padding: 0px;
   font-size: 21px;
   font-weight: 200;
   line-height: 2.1428571435;
-  color: inherit;
+  color: white;
   background-color: #eeeeee;
 }
 
 .jumbotron h1 {
   line-height: 1;
-  color: inherit;
+  color: white;
 }
 
 .jumbotron p {
@@ -4939,14 +4942,10 @@ a.list-group-item.active > .badge,
   border-radius: 6px;
 }
 
-@media screen and (min-width: 768px) {
-  .jumbotron {
-    padding-top: 48px;
-    padding-bottom: 48px;
-  }
+@media screen and (min-width: 768px) 
   .container .jumbotron {
-    padding-right: 60px;
-    padding-left: 60px;
+    padding-right: 10px;
+    padding-left: 10px;
   }
   .jumbotron h1 {
     font-size: 63px;
