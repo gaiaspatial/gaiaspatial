@@ -1,0 +1,11 @@
+<PAMDataset>
+  <Metadata>
+    <MDI key="Software">Microsoft Office</MDI>
+  </Metadata>
+  <Metadata domain="IMAGE_STRUCTURE">
+    <MDI key="INTERLEAVE">PIXEL</MDI>
+  </Metadata>
+  <Metadata domain="ESRI">
+    <MDI key="PyramidResamplingType">NEAREST</MDI>
+  </Metadata>
+</PAMDataset>

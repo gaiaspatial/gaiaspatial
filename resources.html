@@ -23,13 +23,13 @@
 
     body {
       padding: 1% 1% 1% 1%;
-      background-image:url('img/global_landscapes.png');
+      background-color: rgba(48, 80, 52, 1);
       background-size:100%;
       background-repeat:no-repeat;
       color: black;
     } 
     /*http://www.noisetexturegenerator.com/*/ 
-    .container {max-width:110%;
+    .container {max-width:100%;}
      /* margin:0px; padding:0px; max-width:100%; min-width:20%;
     }
     .jumbotron {
@@ -49,13 +49,20 @@
 
     .blockTitle {
       /*text-align: center;*/
-      font-variant: italic;
+
+      letter-spacing:2px;
+      word-spacing:12px;
       margin-bottom: 0px;
-      width:100%;
-color: rgb(22, 36, 136);
-text-align: left;
-font-weight: bold;
-line-height: 30px;
+      width:150%;
+      color: rgb(22, 36, 136);
+      text-align: left;
+      font-weight: bold;
+      position:relative;
+      z-index:1;
+      font-size: 15px;
+      background-color:rgba(191, 192, 176, 0.4);
+      padding: 3px;
+      text-align: center;
     }
     .row {
       /*padding:20px;
@@ -254,6 +261,7 @@ line-height: 30px;
 
     li {
     display:inline;
+    width:40%;
     text-align:center;
     font-weight:bold;
     padding:0px;  }
@@ -305,8 +313,7 @@ line-height: 30px;
 
     #grad1
     {
-      padding: 25px;
-      background: -webkit-linear-gradient(right, rgba(240, 235, 229, 0.8), rgba(238, 234, 229, 0.7), rgba(243, 238, 232, 0.6), rgba(243, 238, 232, 0.5), rgba(2, 8, 54, 0.5));
+      background: -webkit-linear-gradient(left, rgba(240, 235, 229, 0.8), rgba(238, 234, 229, 0.7), rgba(243, 238, 232, 0.6), rgba(243, 238, 232, 0.5), rgba(2, 8, 54, 0.5));
       }
 
 
@@ -326,123 +333,136 @@ line-height: 30px;
      <!-- <div class="jumbotron">-->
 
 
-        <div class="row" style="width:100%;">
-           <div class="col-sm-7" style="margin-left:10%; width:60%">
+        <div class="row" style="background-image: url('img/header9.png');
+background-size: 100%;
+padding: 1.5% 5% 5% 5%;
+background-repeat: no-repeat;">
+
+
+            <div class="col-sm-7" style="margin-left:10%; padding-top: 3%">
               <img src="img/gaialogo.png" class="logo-header img-responsive" alt="" title="">
 
+<ul class = "nav-bar"style= "width: 80%;
+margin: 60px 0px 0px 1%;
+padding: 5px 5px 5px 5px;
+font-size: 13px;
+background-color: rgba(1, 1, 1, 0.7);"> 
 
-<ul class = "nav-bar"style= "width: 80%; margin: 60px 0px 0px 1%; padding:5px 5px 5px 5px; font-size: 13px; background-color:rgba(1, 1, 1, 0.7)"> 
 <!--border-top-left-radius: 60px;
 border-top-right-radius: 10px;
 border-bottom-left-radius: 12px;
 border-bottom-right-radius: 0px;-->
-                <li><a href="index.html" style="color:white; padding:12px 20px 12px 20px" >Home</a></li>
-                <li><a href= "services.html" style="color:white; padding:12px 20px 12px 20px">Services</a></li>
-                <li><a href="projects.html" style="color:white; padding:12px 20px 12px 20px">Projects</a></li>
-                <li><a href="resources.html" style="color:white; padding:12px 20px 12px 20px; 
+                <li><a href="index.html" style="color:white; padding:12px 20px 12px 20px; 
     border-top-left-radius: 60px;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 75px;
-    background-color:rgba(10, 28, 48, 0.7);" >Resources</a></li>
+    background-color:rgba(10, 28, 48, 0.7);" >Home</a></li>
+                <li><a href= "services.html" style="color:white; padding:12px 20px 12px 20px">Services</a></li>
+                <li><a href="projects.html" style="color:white; padding:12px 20px 12px 20px">Projects</a></li>
+                <li><a href="resources.html" style="color:white; padding:12px 20px 12px 20px">Resources</a></li>
                 <li><a href="about.html" style="color:white; padding:12px 20px 12px 20px">About</a></li>
               </ul>
-            </div> <!-- col-sm-7 --> 
-            <div class="col-sm-5" style="padding-top:3%; width:20%">
+
+            </div> <!-- col-sm-4 --> 
+            <div class="col-sm-5" style="padding-top:10px; width:20%">
               <div id="globe"></div>
             </div>  <!-- col-sm-3 --> 
 
      <!-- </div> jumbotron -->
         </div><!-- row -->
 
-<!--Navigation Bar..............................................................-->
-<div class="row"
+            
 
-  </div><!--row-->
-<!--Page Intro.................................................................-->
 
-        <div class="row" style="margin: 0px 15%;">
 
-            <div class="col-sm-12" style="margin:5% 18%;
-padding: 20px 15px 20px 20px;
-color: rgb(255, 255, 255);
+        <div class="row" style="margin: 0px 5%;">
+
+            <div class="col-sm-12" style="margin:1% 5%;
+padding: 0% 3% 3% 3%;
+color: rgb(1,1,1);
 font-family: sans-serif;
-font-size: 16px;
+font-size: 17px;
 font-weight: 700;
 border-top-right-radius: 70px;
 border-style: none;
 border-top-left-radius: 10px;
 border-bottom-left-radius: 25px;
 border-bottom-right-radius: 10px;
-width:65%">
+width:95%">
               <p>
-             new resources Gaia Spatial is an environmental geospatial consultancy, offering expertise in integrative, landscape framed analysis to understand habitats, natural resources and the biodiversity they sustain.
+             Gaia Spatial is an environmental geospatial consultancy, offering expertise in integrative, landscape framed analysis to understand habitats, natural resources and the social, biological and physical diversity they sustain.
               </p>
             </div>
         </div>
 
 
-<!--Page Content................................................................-->
-
-    <div class="row" style= "margin: 0px 6%;">
-
-     <div class="col-sm-9" style="width:80%; padding-right:4% margin:5% 10%;">
+<div class="row">
+  <!--<div id='grad1'>-->
 
 
-      <div class="col-sm-8" style= "width:70%"> 
-        <div class="blockContent" style="background-image: url(img/intgeoinsight.png); background-size: contain; background-repeat: no-repeat; padding:50%; margin-left:0%; background-color: rgba(2, 8, 54, 0.5);">
+    <div class="row" style= "margin: 0px 5%; font-size: 11px;">
+
+    <div class="col-sm-9" style="border-width: 3px; padding-right:4% margin-top:-50px; margin-left 10%;">
+
+
+
+      <div class="col-sm-4" style="color:black; font-size: 13px; width:30%; padding: 0px 0px 10px 0px">
+        <div id='grad1'>
+          <div class="blockContent" style= "width:100%;">  
+           <div class="blockTitle" >         
+            <h4>Geospatial Data<h4>
+ 
+            </div>
+            <p>and value added geospatial data management, acquisition, Gaia Spatial is an environmental geospatial consultancy, offering expertise in integrative, landscape framed analysis to Gaia Spatial is an environmental geospatial consultancy, offering expertise in integrative, landscape framed analysis to documentation & distribution including:</p> 
+
+
+            <div class="blockTitle" style="margin-top:50px">         
+            <h4>Landscape Information<h4>
+            </div>
+
+            <p>Gaia Spatial is an environmental geospatial consultancy, offering expertise in integrative, landscape framed analysis to understand habitats, natural resources and the biodiversity they sustain. Gaia Spatial is an environmental geospatial consultancy, offering expertise in integrative, landscape framed analysis to Gaia Spatial is an environmental geospatial consultancy, offering expertise in integrative, landscape framed analysis to </p>
+                      
+            <div class="blockTitle">         
+            <h4>Socio-ecological Insight <h4>
+            </div>
+            <p>Gaia Spatial is an environmental geospatial consultancy, offering expertise in integrative, landscape framed analysis to understand habitats, natural resources and the biodiversity they sustain.Gaia Spatial is an environmental geospatial consultancy, offering expertise in integrative, landscape framed analysis to Gaia Spatial is an environmental geospatial consultancy, offering expertise in integrative, landscape framed analysis to </p>   
+                        
+          </div> <!-- blockContent -->
+      </div> <!-- col-md-4 -->     
+   </div>
+
+      <div class="col-sm-8" style= "width:70%";> 
+        <div class="blockContent" style="background-image: url(img/intgeoinsight.png); background-size: 85%; background-repeat: no-repeat; padding:52.4%; background-color: rgba(1, 1, 24, 0.5);">
         </div>  
       </div>
 
-      <div class="col-sm-4" style="color:black; font-size: 12px; width:30%; background-color: rgba(255,255,255,0.7)">
-       <!-- <div id='grad1'>-->
-          <div class="blockContent" style= "width:100%;"> 
-          <div class="blockTitle" style= "font-size:15px; font-weight:bold; color: rgb(22,36,136); line-height:50px">
-          <p>Data to Information to Insight<p>
-          </div> 
-           <div class="blockTitle">         
-            <p>Geospatial Data<p>
-              <p>       <p>
-            </div>
-            <p>and value added geospatial data management, acquisition, documentation & distribution including:</p> 
-           <div class="blockTitle">         
-            <p>Landscape Information<p>
-            </div>
-            <p>Gaia Spatial is an environmental geospatial consultancy, offering expertise in integrative, landscape framed analysis to understand habitats, natural resources and the biodiversity they sustain.</p>
-            <div class="blockTitle">         
-            <p>Socio-ecological Insight <p>
-            </div>
-            <p>Gaia Spatial is an environmental geospatial consultancy, offering expertise in integrative, landscape framed analysis to understand habitats, natural resources and the biodiversity they sustain.</p>   
-          </div> <!-- blockContent -->
-      <!--  </div> grad1 -->     
-     </div>
-    </div>
-<!--Updated Spotlights..........................................................-->
+
+</div>
+<!--..........................................................................-->
 
 
-        <div class="col-sm-2" style="padding: 5px; width:20%; background-color: rgba(1,1,1,0.7);">
+        <div class="col-sm-3" style="padding: 10px; width:20%; margin-left:2.5%; background-color: rgba(1,1,1,0.5);">
 
-        <div class="blockTitle">
+
+
+
+
          <div id="spotlightstitle" style="color:white; text-align: center; font-weight: bold; font-size: 16px; border-top-left-radius: 35px; border-top-right-radius: 35px; padding:5px">
          <p> SPOTLIGHTS</p></div>
-       </div>
-       <div class="blockContent" style="color:white; text-align: center; width:100%; line">
+
+       <div class="blockContent" style="color:white; text-align: center; width:100%;">
           <p>Ecological Drones<p> 
           <p>Interdisciplinary Biophysical Science<p> 
           <p>Landscape Framed Ecological Systems<p> 
           <p>Geospatail Technologies<p> 
           <p>Gaia Spatial Blog<p> 
-
-        <h5><b>Contact Us:</b></h5>
-        <p>337-255-6952</p>
-        <p><a href="mailto:nadine.trahan@gaiaspatial.com" target="_blank"><b>nadine.trahan@gaiaspatial.com</b></a></p>
-
        </div>
-       <ul class="social-list" style="padding-left:35%">    
+       <ul class="social-list">    
           <li><span class="text-muted"></span></li>  
-          <li class="linkedin"><a href="http://www.linkedin.com/pub/nadine-trahan/7/74/869" target="_blank"><span></span></a></li>
+          <li class="linkedin"><a href="#" target="_blank"><span></span></a></li>
           <li class="twitter"><a href="http://twitter.com/GaiaSpatial" target="_blank"><span></span></a></li>
-          <!--<li class="facebook"><a href="#" target="_blank"><span></span></a></li>-->      
+          <li class="facebook"><a href="#" target="_blank"><span></span></a></li>            
         </ul>   
       </div>
       </div>
@@ -455,7 +475,7 @@ width:65%">
         <div class="col-md-12 blockFooter">
         <h5><b>Contact Us:</b></h5>
         <p>337-255-6952</p>
-        <p><a href="mailto:ntrahan@gaiaspatial.com" target="_blank"><b>info@gaiaspatial.com</b></a></p>
+        <p><a href="mailto:info@gaiaspatial.com" target="_blank"><b>info@gaiaspatial.com</b></a></p>
         
       <!-- <div class="pull-right">&copy; Nadine Trahan 2013</div>  --> 
        </div> 
@@ -469,15 +489,6 @@ width:65%">
     <script src="js/topojson.v1.min.js"></script>
     <script src="js/fit-projection.js"></script>
     <script src="js/main.js"></script>
-<script src="//platform.linkedin.com/in.js" type="text/javascript">
- lang: en_US
-</script>
-<script type="IN/FollowCompany" data-id="Gaia Spatial" data-counter="none"></script>
-
-
-
-
-
 
   </body>
 
