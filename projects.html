@@ -3,10 +3,8 @@
   <head>
     <title>Gaia Spatial</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    
     <meta name="description" content="">
     <meta name="author" content="">
-
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="css/custom.css" rel="stylesheet">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
@@ -19,17 +17,32 @@
 
     <!--comment!-->
 
+    <script src="../js/jquery-1.9.1.min.js"></script>
+
+    <script src="../js/jquery.cycle.all.js"></script>
+
+    <script type="text/javascript">
+      $('#slider').cycle({ 
+$('#slider').cycle({ 
+    fx:     'fade', 
+    speed:   300, 
+    timeout: 3000, 
+    next:   '#next', 
+    pause:   1 
+});
+    </script>
+
     <style type="text/css">
 
     body {
       padding: 1% 1% 1% 1%;
-      background-color:rgba(rgba(76,97,53,1));
+      background-color: rgba(80, 95, 42, 1);
       background-size:100%;
       background-repeat:no-repeat;
       color: black;
     } 
     /*http://www.noisetexturegenerator.com/*/ 
-    .container {max-width:110%;
+    .container {max-width:100%; margin-top:-2%;}
      /* margin:0px; padding:0px; max-width:100%; min-width:20%;
     }
     .jumbotron {
@@ -40,23 +53,75 @@
       background-position-y: 10px;
       /*margin-top: 60px;*/
     }
+    .containerSub {background-color: rgba(1,1,1,0.2);
+box-shadow: 5px -5px 30px 1px rgba(1,1,1,0.7);
+margin: 20% 10%;}
+
     .logo-header {
-      /* width: 65%;*/
-            margin-top: 5%;
+      width: 75%;
+      margin-top: 2%;
     }
     .globe {padding:3%;
     }
 
     .blockTitle {
       /*text-align: center;*/
-      font-variant: italic;
-      margin-bottom: 0px;
-      width:100%;
-color: rgb(22, 36, 136);
+
+letter-spacing: 5px;
+word-spacing: 5px;
+width: 95%;
+color: rgb(19, 18, 18);
 text-align: left;
 font-weight: bold;
-line-height: 30px;
+position: relative;
+z-index: 1;
+font-size: 15px;
+
+padding: 1%;
+text-align: center;
+border-top-right-radius: 20px;
+border-top-left-radius: 60px;
+border-bottom-right-radius: 60px;
+margin-left: 2%;
+font-variant: small-caps;
+font-family: cursive;
+border-bottom-left-radius: 20px;
+
     }
+
+        .blockTitle_2 {
+      /*text-align: center;
+      background-color: rgba(170, 85, 6, 0.5);
+      box-shadow: 1px -1px 20px 1px rgba(11, 12, 11, 0.9)*/
+
+
+word-spacing: 5px;
+width: 95%;
+color: rgb(19, 18, 18);
+text-align: left;
+font-weight: bold;
+position: relative;
+z-index: 1;
+font-size: 15px;
+
+padding: 1%;
+text-align: center;
+border-top-right-radius: 20px;
+border-top-left-radius: 60px;
+border-bottom-right-radius: 60px;
+margin-left: 2%;
+font-variant: small-caps;
+font-family: cursive;
+border-bottom-left-radius: 20px;
+
+      padding: 3px;
+      text-align: center;
+      border-top-left-radius: 20px;
+border-top-left-radius: 60px;
+border-bottom-right-radius: 75px;
+margin-left:3%;*/
+    }
+
     .row {
       /*padding:20px;
 
@@ -72,9 +137,9 @@ line-height: 30px;
       margin-top: 0px;*/
 
     }
-    .blockContent {
+.blockContent {
      
-      padding: 20px 20px 20px 20px;}
+ padding: 3%;}
       /*width:80%;}
       margin-right:10px;
      /*width:100%;
@@ -169,7 +234,7 @@ line-height: 30px;
     }
     #globe{
       text-align: right;
-      padding-left:30%;
+      
     }
     .blockSummary {
       width: 90%;
@@ -249,12 +314,11 @@ line-height: 30px;
     margin-left:0px;
     padding:0px;
     color:black;
-    width:80%;
+    width:100%;
         }
 
     li {
-    display:inline;
-    width:40%;
+   
     text-align:center;
     font-weight:bold;
     padding:0px;  }
@@ -265,7 +329,14 @@ line-height: 30px;
     border-bottom-right-radius: 15px;
     border-color: rgba(19, 48, 10, 0.7);
     border-width: 10px;
-    padding:8px;*/
+    padding:8px;
+       width:40%;*/
+
+    .li-bullet {
+    display:inline;
+    text-align:left;
+    font-weight:500;
+    padding:2px;  }
 
 
 
@@ -306,13 +377,62 @@ line-height: 30px;
 
     #grad1
     {
-      padding: 25px;
-      background: -webkit-linear-gradient(left, rgba(240, 235, 229, 0.8), rgba(238, 234, 229, 0.7), rgba(243, 238, 232, 0.6), rgba(243, 238, 232, 0.5), rgba(2, 8, 54, 0.5));
+      background: -webkit-linear-gradient(left, rgb(247, 232, 204), rgb(247, 232, 204), rgb(247, 232, 204), rgb(247, 232, 204), rgb(247, 232, 204));
+      }
+
+    #grad_dark
+    {
+      background: -webkit-linear-gradient(top, rgba(1,1,1,0.3), rgba(1,1,1,0.4), rgba(1,1,1,0.5), rgba(1,1,1,0.4), rgba(1,1,1,0.3));
+      }
+
+      #grad_all
+      {background: -webkit-linear-gradient(left, rgba(236, 229, 150, 0), rgba(236, 229, 150, 0.2), rgba(236, 229, 150, 0.6), rgba(236, 229, 150, 0.9), rgba(236, 229, 150, 0.6), rgba(9, 38, 129, 0.4), rgba(9, 38, 129, 0.4), rgba(9, 38, 129, 0.4), rgba(9, 38, 129, 0.4), rgba(9, 38, 129, 0.4), rgba(1,1,1,0.4), rgba(50, 70, 31, 1), rgba(50, 70, 31, 1), rgba(50, 70, 31, 1));
+      }
+      #grad_shadow
+      {background: -webkit-linear-gradient(top, rgba(168, 164, 131, 0.3), rgba(224, 220, 207, 0.4), rgba(129, 97, 89, 0.4),rgba(189, 182, 165, 0.5), rgba(201,195,150,0.8), rgba(192, 187, 152, 0.8), rgba(201, 211, 219, 0.8), rgba(189, 186, 156, 0.8), rgba(201, 195, 150, 0.8), rgba(201, 195, 150, 0.7), rgba(201, 195, 150, 0.8), rgba(201, 195, 150, 0.7), rgba(201, 195, 150, 0.8), rgba(201, 195, 150, 0.7), rgba(201, 195, 150, 0.8), rgba(201, 195, 150, 0.9));
       }
 
 
+      #slide_wrapper
+      {display:block;
+        width:40%;}
 
+      #slide_container 
+      {background-color:rgba(1,1,1,0.5);
+        display:block;
+        float:left;
+      width:300px;
+      height:300px;
+        overflow:auto;
+        margin:auto;
+      }
 
+      #prev {background-image: url('img/a_landinfo.png');
+      background-repeat:no-repeat;
+      display:block;
+      float:left;
+      width:300px;
+      height:300px;
+      position:relative;
+      z-index:99;}
+
+      #next {background-image: url('img/drainage.png');
+      background-repeat:no-repeat;
+      display:block;
+      float;left;
+      width:300px;
+      height:300px;
+      position:relative;
+      z-index:99;}
+
+      #slider{
+        display:block;
+        float:left;
+      width:300px;
+      height:300px;
+        overflow:hidden;
+        position:absolute;
+      }
 
       /*border-top-left-radius: 50px;
       border-top-right-radius: 50px;*/
@@ -327,117 +447,251 @@ line-height: 30px;
      <!-- <div class="jumbotron">-->
 
 
-        <div class="row" style="width:100%; background-image: url('img/Watersheds-head.png');
-background-repeat: no-repeat;>)
+        <div class="row" style="background-image: url('img/header01.png');
+background-size: 103%;
+background-repeat: no-repeat;
+padding: 1% 4% 5% 7%;
+margin-left:-3%">
 
 
-            <div class="col-sm-7" style="margin-left:10%; padding 3%">
+            <div class="col-sm-6" style="margin-left:15%; padding-top: 3%">
               <img src="img/gaialogo.png" class="logo-header img-responsive" alt="" title="">
-Watersheds_Header_Image
-              <ul class = "nav-bar"style= "width: 80%;
-margin: 60px 0px 0px 1%;
-padding: 5px 5px 5px 5px;
-font-size: 13px;
-background-color: rgba(1, 1, 1, 0.7);"> 
+
+<ul class = "nav-bar"style= "width: 100%;
+margin: 11% 0% 0% -12%; 
+word-spacing:20px
+font-size: 13px;"> 
+
 <!--border-top-left-radius: 60px;
 border-top-right-radius: 10px;
 border-bottom-left-radius: 12px;
 border-bottom-right-radius: 0px;-->
-                <li><a href="index.html" style="color:white; padding:12px 20px 12px 20px" >Home</a></li>
-                <li><a href= "services.html" style="color:white; padding:12px 20px 12px 20px">Services</a></li>
-                <li><a href="projects.html"style="color:white; padding:12px 20px 12px 20px; 
-    border-top-left-radius: 60px;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 75px;
-    background-color:rgba(10, 28, 48, 0.7);">Projects</a></li>
-                <li><a href="resources.html" style="color:white; padding:12px 20px 12px 20px">Resources</a></li>
-                <li><a href="about.html" style="color:white; padding:12px 20px 12px 20px">About</a></li>
+                <li style="display:inline; list-style-type:none"><a href="index.html" style="display:inline; list-style-type:none; color: white;
+padding: 1.3% 3% 1% 3%;
+box-shadow: -3px -2px 10px 3px rgba(1, 1, 1, 0.9);
+border-top-left-radius: 60px;
+border-top-right-radius: 10px;
+border-bottom-left-radius: 12px;
+border-bottom-right-radius: 75px;" >Home</a></li>
+                <li style="display:inline; list-style-type:none"><a href= "services.html" style="text-shadow: -0.3px 0.3px 1px rgba(1,1,1,0.4);color:white; padding: 1.3% 3% 1% 3%;
+box-shadow: -3px -2px 10px 3px rgba(1, 1, 1, 0.9);
+border-top-left-radius: 60px;
+border-top-right-radius: 10px;
+border-bottom-left-radius: 12px;
+border-bottom-right-radius: 75px;">Services</a></li>
+                <li style="display:inline; list-style-type:none"><a href="projects.html" style="color:white; padding: 1.3% 3% 1% 3%;
+box-shadow: -3px -2px 10px 3px rgba(1, 1, 1, 0.9);
+border-top-left-radius: 60px;
+border-top-right-radius: 10px;
+border-bottom-left-radius: 12px;
+border-bottom-right-radius: 75px;">Projects</a></li>
+                <li style="display:inline; list-style-type:none"><a href="resources.html" style="color: white;
+padding: 1.3% 3% 1% 3%;
+box-shadow: -3px -2px 10px 5px rgba(1, 1, 1, 1);
+border-top-left-radius: 60px;
+border-top-right-radius: 10px;
+border-bottom-left-radius: 12px;
+border-bottom-right-radius: 75px;
+background-color: rgba(141, 77, 77, 0.6);">Resources</a></li>
+
+                <li style="display:inline; list-style-type:none"><a href="about.html" style="color:white;padding: 1.3% 3% 1% 3%;
+box-shadow: -3px -2px 10px 3px rgba(1, 1, 1, 0.9);
+border-top-left-radius: 60px;
+border-top-right-radius: 10px;
+border-bottom-left-radius: 12px;
+border-bottom-right-radius: 75px;">About</a></li>
               </ul>
 
             </div> <!-- col-sm-4 --> 
-            <div class="col-sm-5" style="padding-top:10px; width:20%">
+            <div class="col-sm-6" style="padding-top:10px; width:20%">
               <div id="globe"></div>
             </div>  <!-- col-sm-3 --> 
 
      <!-- </div> jumbotron -->
         </div><!-- row -->
 
-            
-  
+  <div class = "containerSub" >     
 
-        <div class="row" style="margin: 0px 5%;">
+<div id = 'grad_shadow1' style="margin: -4.5% 4%;
+box-shadow: 1px -2px 20px 3px rgba(1, 1, 1, 0.7);
+background-color: rgba(133, 75, 29, 0.7);">
+<!--border-top-style: none;
+background-color: rgba(141, 113, 77, 0.3);"
+>
+<!--border: 5px inset rgba(126, 122, 118, 0.9) !important;"
+rgba(243, 218, 154, 0.5)
+rgba(85, 68, 75, 1)-->
 
-            <div class="col-sm-12" style="margin:5% 15%;
-padding: 20px 15px 20px 20px;
-color: rgb(255, 255, 255);
+
+
+        <div class="row">
+
+      <div class="col-sm-12" style="
+
+margin: 2% 10% 2% 13%;
+letter-spacing: 0px;
+word-spacing: 3px;
+color: rgba(212, 258, 190, 1);
 font-family: sans-serif;
-font-size: 18px;
+font-size: 17px;
 font-weight: 600;
-border-top-right-radius: 70px;
-border-style: none;
-border-top-left-radius: 10px;
-border-bottom-left-radius: 25px;
-border-bottom-right-radius: 10px;
-width:65%">
-              <p>
-             Gaia Spatial is an environmental geospatial consultancy, offering expertise in integrative, landscape framed analysis to understand habitats, natural resources and the cultural and biological diversity they sustain.
-              </p>
+border-top-left-radius: 50px;
+border-bottom-right-radius: 50px;
+width: 80%;
+font-familY: sans-serif;
+padding: 2%;
+text-shadow: -1px 1px 1px black;">
+<!--background-color: rgba(14, 11, 5, 0.4);">
+-border-top-right-radius: 10px;
+border-top-left-radius: 10px;-->
+
+
+      <p>Gaia Spatial is an environmental geospatial consultancy, specializing in integrative, multi-scalar, geospatial data collation, processing and analysis to understand habitats, natural resources and the social and bilogical diversity they sustain.
+            </p>
             </div>
         </div>
 
 
+<div class="row">
+  <!--<div id='grad1'>-->
 
+  <div class="row" style= "margin: 0px 5%; font-size: 11px;">
 
-    <div class="row" style= "margin: 0px 5%; font-size: 11px;">
-
-
-        <div class="col-sm-9" style="border-width: 3px; padding-right:4% margin:5% 10%;">
-
-
-      <div class="col-sm-4" style="color:black; font-size: 13px; width:30%">
-        <div id='grad1'>
-
-
-
+    <div class="col-sm-9" style="margin-right: 2%;
+width: 78%;
+color: rgba(7, 52, 148, 0.7);
+border-top-left-radius: 60px;
+border-top-right-radius: 60px;
+border-bottom-left-radius: 12px;
+border-bottom-right-radius: 75px;
+background-color: rgba(202, 248, 187, 0.4);
+box-shadow: -3px 3px 12px rgba(1,1,1,0.9);">
+      <!--background-color:rgba(201, 195, 150, 0.8);
+      box-shadow: 2px -2px 20px 2px rgba(1,1,1,0.7);-->
+        <div class="blockTitle" >         
+          <p>DATA to INFORMATION to INSIGHT<p>
+        </div>
+        <div class="blockContent" style="margin:0px; color:black; font-size:12px">
+        <p>Our niche is effective project management is framed within the translation of real world socio-ecological questions to the digital world of GIS via the process of geospatial analysis.founded upon sound expertise in theoretical and applied research. Our uniquely integrative and coherent approach fosters integrative perspectives of... question translation defines overall GIS requirements, data to information to insight workflows, QA/QC, deliverables & knowledge transfer strategies.<p>
+        </div>
+      <div class="col-sm-5" style="color:black; font-size: 13px;  padding: 0px 0px 10px 5px;">
           <div class="blockContent" style= "width:100%;">  
-           <div class="blockTitle">         
-            <p>Geospatial Data<p>
-              <p>       <p>
-            </div>
-            <p>and value added geospatial data management, acquisition, documentation & distribution including:</p> 
-                       <div class="blockTitle">         
-            <p>Landscape Information<p>
-            </div>
-            <p>Gaia Spatial is an environmental geospatial consultancy, offering expertise in integrative, landscape framed analysis to understand habitats, natural resources and the biodiversity they sustain.</p>
-            <div class="blockTitle">         
-            <p>Socio-ecological Insight <p>
-            </div>
-            <p>Gaia Spatial is an environmental geospatial consultancy, offering expertise in integrative, landscape framed analysis to understand habitats, natural resources and the biodiversity they sustain.</p>   
+           <div class="blockTitle_2" >         
+            <p>Geospatial Data<p></div>
+            <p>We bring sound expertise to support the fundamental requirement for succuessful geospatial analysis: data quality, coherence and informative value, via:</p>
+            
+<div id="bullets" style="display:block;
+    text-align:left;
+    padding:0px;">
+          <ul style="padding:10px">
+            <li style="text-align:left; font-weight:normal">
+    geospatial data collation</li>
+            <li style="text-align:left; font-weight:normal">geodatabase development/management</li>
+            <li style="text-align:left; font-weight:normal">integration/ interoperability/conversion</li>
+            <li style="text-align:left; font-weight:normal">standards/accuracy/metadata
+            <li style="text-align:left; font-weight:normal">GPS/loggers/ mobile apps</li>
+            <li style="text-align:left; font-weight:normal">eco-drone aquisition</li>
+            <li style="text-align:left; font-weight:normal">servers/portals
+            </li><li style="text-align:left; font-weight:normal">RS georeferencing/ processing/mining/feature extraction</li>
+
+          </ul>
+</div>
+
+
+            <div class="blockTitle_2" style="margin-top:0px">         
+            <p>Landscape Information<p></div>
+            <p>We derive landscape information from geospatial data to construct integrated, multi-scalar, biophysical context, including:  </p> 
+
+<ul style="padding:10px">
+            <li style="text-align:left; font-weight:normal">
+    georeferencing/mosaics</li>
+            <li style="text-align:left; font-weight:normal">feature extraction</li>
+            <li style="text-align:left; font-weight:normal">topographic surfaces/variables</li>
+            <li style="text-align:left; font-weight:normal">watershed/stream network delineation
+            <li style="text-align:left; font-weight:normal">landscape classification</li>
+            <li style="text-align:left; font-weight:normal">landscape connectivity/networks/gaps</li>
+            <li style="text-align:left; font-weight:normal">biophysical description/change/diversity
+            </li><li style="text-align:left; font-weight:normal">3d visualization</li>
+
+          </ul>
+
+
+
+
+            <div class="blockTitle_2">         
+            <p>Socio-ecological Insight <p></div>
+            <p>We frame project specific questions within landscape context to gain insights relevant to socio-ecological sustainability, such as: </p>   
+
+
+<ul style="padding:10px">
+            <li style="text-align:left; font-weight:normal">
+    georeferencing/mosaics</li>
+            <li style="text-align:left; font-weight:normal">climate/sea level/cryosphere change</li>
+            <li style="text-align:left; font-weight:normal">habitat conservation/connectivity/gaps</li>
+            <li style="text-align:left; font-weight:normal">wildlife/ biodiversity protection
+            <li style="text-align:left; font-weight:normal">sustainable development/urban planning</li>
+            <li style="text-align:left; font-weight:normal">restoration monitoring/assessment</li>
+            <li style="text-align:left; font-weight:normal">precision agriculture
+            </li><li style="text-align:left; font-weight:normal">disaster prediction/management/response</li>
+
+          </ul>
+
+
+
+
           </div> <!-- blockContent -->
       </div> <!-- col-md-4 -->     
-   </div>
 
-      <div class="col-sm-8" style= "width:70%"> 
-        <div class="blockContent" style="background-image: url(img/intgeoinsight.png); background-size: contain; background-repeat: no-repeat; padding:50%; margin-left:0%; background-color: rgba(2, 8, 54, 0.5);">
-        </div>  
+      <div class="col-sm-7" style= "padding: 4% 0%;"> 
+        <div class="blockContent" style="background-image: url(img/a_geodata.png); background-size: 95%; background-repeat: no-repeat; padding:30%; ">
+        </div> 
+
+
+
+    <!-- Carousel
++    ================================================== -->
+
+        <div id="slide_wrapper">
+          <div id="slide_container">
+             <div class="controller" id="prev"></div>
+             <div id="slider"> 
+              <img src="url(img/drainage.png)">
+              <img src="url(img/a_landinfo.png)">
+              <img src="url(img/a_geodata.png)">
+             </div>
+             <div class="controller" id="next"></div>
+          </div>
+        </div>
+
       </div>
 
+        </div>
+<!--.......................................................................
+        <div class="blockContent" style="background-image: url(img/a_ecoinsight.png); background-size: 95%; background-repeat: no-repeat; padding:30%; ">
+        </div> -->
 
-</div>
+
+
+
 <!--..........................................................................-->
 
 
-        <div class="col-sm-3" style="padding: 10px; width:20%; margin-left:2.5%; background-color: rgba(1,1,1,0.5);">
+        <div class="col-sm-2" style="width: 20%;
+padding: 0px;
+border-top-left-radius: 35px;
+border-top-right-radius: 35px;
+background-color: rgba(197, 174, 7, 0.5);
+font-family: cursive;
+box-shadow: 2px -2px 20px 2px rgba(1, 1, 1, 0.5);">
 
 
 
 
-        <div class="blockTitle">
-         <div id="spotlightstitle" style="color:white; text-align: center; font-weight: bold; font-size: 16px; border-top-left-radius: 35px; border-top-right-radius: 35px; padding:5px">
+
+         <div id="spotlightstitle" style="color:black; text-align: center; font-weight: bold; font-size: 15px; border-top-left-radius: 35px; border-top-right-radius: 35px; padding-top:10%; letter-spacing: 2px;">
          <p> SPOTLIGHTS</p></div>
-       </div>
-       <div class="blockContent" style="color:white; text-align: center; width:100%;">
+
+       <div class="blockContent" style="color:black; text-align: center; width:100%; font-size:14px">
           <p>Ecological Drones<p> 
           <p>Interdisciplinary Biophysical Science<p> 
           <p>Landscape Framed Ecological Systems<p> 
@@ -465,6 +719,8 @@ width:65%">
         
       <!-- <div class="pull-right">&copy; Nadine Trahan 2013</div>  --> 
        </div> 
+
+   
     </div> <!-- container -->
   
 
